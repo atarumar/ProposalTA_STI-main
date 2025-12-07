@@ -1,0 +1,83 @@
+% ==========================================
+% BAB I PENDAHULUAN
+% ==========================================
+\chapter{PENDAHULUAN}
+\label{chap:pendahuluan}
+% --- Latar Belakang ---
+\section{Latar Belakang}
+Transparansi parlemen merupakan domain tata kelola publik yang mensyaratkan keterbukaan dalam proses pengambilan keputusan legislatif, tidak sekadar melalui publikasi dokumen statis tetapi melalui penyediaan ekosistem informasi yang terstandarisasi. Secara konseptual, transparansi ini menuntut data kinerja, mulai dari pola pemungutan suara (\textit{roll-call votes}) hingga notulensi rapat, untuk disajikan dalam format yang dapat diproses kembali (\textit{reusable}) guna menjamin akuntabilitas fungsional \autocite{begany2024ogdtransformation}. Masalah mendasar dalam domain ini adalah kesenjangan (\textit{gap}) antara ketersediaan informasi nominal dengan kegunaan praktisnya (\textit{usability}).
+
+Sering kali, data legislatif terperangkap dalam format tidak terstruktur tanpa interoperabilitas semantik, yang menghambat pelacakan hubungan kausal antara mandat politik dan tindakan legislatif nyata \autocite{wang2023paths}. Ketiadaan mekanisme penelusuran (\textit{audit trails}) yang valid ini menciptakan ambiguitas yang menjadikan transparansi hanya sebatas jargon administratif tanpa dampak pengawasan signifikan \autocite{sheppard2023transparency}. Inti permasalahan modern bukan lagi pada ketersediaan data, melainkan pada struktur dan kualitasnya untuk memungkinkan audit kinerja independen \autocite{liang2025determinants}.
+
+Penyelesaian masalah transparansi ini krusial karena peran fundamentalnya dalam menjaga kepercayaan publik (\textit{political trust}) sebagai mata uang utama demokrasi. Di era digital, warga menuntut bukti empiris yang dapat diverifikasi, bukan sekadar janji politik. Penelitian menunjukkan ketersediaan data transparan berkorelasi positif dengan legitimasi negara, sedangkan kekaburan informasi (\textit{opacity}) diasosiasikan dengan persepsi korupsi yang tinggi \autocite{chen2023determinants}.
+
+Tanpa transparansi fungsional, terjadi asimetri informasi yang melemahkan kontrak sosial antara pemilih dan wakilnya \autocite{ferry2024democracy}. Lebih lanjut, transparansi berfungsi sebagai mekanisme pengendali internal (\textit{internal control mechanism}) yang mendisiplinkan perilaku aktor politik melalui efek pengawasan (\textit{surveillance effect}) \autocite{bordignon2020rules}. Kegagalan menangani defisit ini bukan hanya masalah teknis, melainkan ancaman bagi keberlanjutan institusi demokrasi itu sendiri \autocite{rienks2023corruption}.
+
+Dalam lanskap penelitian global, diskursus mengenai informatika parlemen (\textit{parliamentary informatics}) dan transparansi digital telah bergeser dari sekadar digitalisasi dokumen menuju penerapan teknologi analitik canggih untuk memantau kinerja sektor publik. Sejumlah studi terbaru di Eropa dan Amerika Utara telah berhasil mendemonstrasikan penggunaan teknik \textit{Process Mining} dan \textit{Artificial Intelligence (AI)} untuk mengaudit prosedur administratif dan mendeteksi anomali dalam log aktivitas pemerintahan \autocite{nai2025leveraging, himler2024anomaly}. Fokus utama dari penelitian-penelitian ini adalah membangun kerangka kerja teknis yang mampu mengekstraksi wawasan dari data yang sangat besar (\textit{big data}), seperti memprediksi kepatuhan prosedur atau mengotomatisasi analisis teks hukum untuk meningkatkan responsivitas legislatif terhadap konstituen \autocite{kreps2023can}. Kesamaan mendasar antara penelitian-penelitian global ini dengan proyek yang diusulkan terletak pada penggunaan data terstruktur (\textit{structured logs}) sebagai bahan baku utama untuk menciptakan akuntabilitas yang terukur dan berbasis bukti (\textit{data-driven accountability}).
+
+Dalam konteks Indonesia, literatur tata kelola data pemerintah telah berkembang namun masih terkonsentrasi pada \textit{e-government} umum atau fase elektoral. Tantangan utama yang diidentifikasi adalah fragmentasi kelembagaan dan rendahnya kualitas infrastruktur data yang menghambat pemanfaatan optimal. Meski inisiatif teknologi sipil (\textit{civic tech}) seperti JariUngu telah berhasil meningkatkan partisipasi politik, fokusnya masih terbatas pada visualisasi profil dan data pemilu, bukan pemantauan kinerja pasca-pemilu yang mendalam \autocite{halimatusadiyah2025understanding}. \textit{Research gap} yang nyata dalam literatur Indonesia adalah ketiadaan studi yang mengembangkan arsitektur \textit{event log} untuk memantau aktivitas harian legislator DPR RI yang terhubung secara eksplisit dengan janji kampanye. Penelitian ini hadir untuk mengisi kekosongan tersebut dengan menawarkan solusi teknis interoperabilitas data yang belum dieksplorasi sebelumnya dalam konteks parlemen nasional.
+
+Mengingat kompleksitas tantangan transparansi dan kekosongan instrumen pengawasan yang ada, terdapat kebutuhan mendesak untuk merumuskan kerangka teknis yang dapat memecahkan masalah fragmentasi data dan diskoneksi semantik dalam ekosistem informasi parlemen saat ini. Diperlukan sebuah pendekatan baru yang menjawab pertanyaan fundamental mengenai konsistensi kinerja wakil rakyat
+% --- Rumusan Masalah ---
+\section{Rumusan Masalah}
+Berdasarkan latar belakang dan \textit{gap} yang ada, pertanyaan penelitian ini adalah:
+\begin{enumerate}
+\item	Apa struktur data yang diperlukan untuk membangun dashboard yang mengintegrasikan aktivitas faktual legislator (apa yang mereka lakukan) dengan janji kampanye mereka (apa yang mereka katakan)?
+\item   Apa metrik dan indikator kinerja yang tepat untuk mengukur konsistensi antara komitmen kampanye dan aktivitas legislatif legislator yang ditampilkan dalam dashboard?
+\item	Apa mekanisme visualisasi informasi yang efektif untuk merepresentasikan perbandingan (komparasi) antara janji kampanye dan realisasi kinerja legislator pada antarmuka dashboard?
+
+\end{enumerate}
+
+% --- Tujuan ---
+\section{Tujuan}
+Berdasarkan rumusan masalah yang telah dijelaskan, tujuan dari tugas akhir ini adalah sebagai berikut: 
+\begin{enumerate}
+\item   Merancang sistem yang mampu mengekstraksi dan mentransformasi dokumen aktivitas legislatif DPR RI yang tidak terstruktur menjadi event log yang terstandarisasi?
+\item   Merumuskan metrik dan logika komparasi untuk mengukur tingkat konsistensi antara aktivitas faktual harian legislator dengan janji kampanye mereka dalam sebuah mekanisme penelusuran (\textit{audit trail}) yang terintegrasi.
+\item   Membangun antarmuka dashboard interaktif yang memvisualisasikan perbandingan antara janji kampanye dan realisasi kinerja legislator secara intuitif guna memudahkan publik melakukan pengawasan berbasis data.
+
+\end{enumerate}
+% --- Batasan Masalah ---
+\section{Batasan Masalah}
+Dalam pelaksanaan tugas akhir ini, batasan yang digunakan adalah:
+
+\begin{enumerate}
+\item Cakupan subjek adalah anggota DPR RI periode 2024-2029, dengan sumber data aktivitas dari dokumen publik resmi dan media kredibel, serta janji kampanye dari dokumen visi-misi terverifikasi.
+\item Pengolahan data dibatasi pada dokumen dan berita berbahasa Indonesia menggunakan metode \textit{Natural Language Processing} (NLP) untuk menghasilkan struktur \textit{event log} secara otomatis.
+\item Sumber data utama yang digunakan untuk analisis aktivitas legislatif dibatasi pada dokumen Risalah Rapat Paripurna yang tersedia secara publik di situs resmi DPR RI, mengingat kelengkapan dan validitas formal dokumen tersebut sebagai representasi sikap resmi anggota dewan.
+\item Penautan antara aktivitas legislatif dan janji kampanye didasarkan pada analisis kesamaan semantik teks, tanpa melakukan verifikasi kebenaran hukum atau penilaian etik terhadap konten.
+\item Sistem yang dibangun merupakan prototipe akademik berupa \textit{dashboard} visualisasi, tidak mencakup aspek skalabilitas infrastruktur produksi atau keamanan siber tingkat lanjut.
+
+\end{enumerate}
+% --- Metodologi Pengerjaan TA ---
+\section{Metodologi}
+\label{sec:metodologi}
+
+Pelaksanaan tugas akhir ini dilakukan melalui serangkaian tahapan sistematis dan terstruktur untuk memastikan bahwa perumusan masalah didasarkan pada fakta empiris dan solusi yang ditawarkan didukung oleh landasan teori yang kuat serta metode pengambilan keputusan yang objektif. Tahapan penelitian, khususnya dalam penyusunan proposal ini, meliputi investigasi pengumpulan fakta untuk merumuskan masalah, studi literatur, serta penentuan solusi terbaik menggunakan metode kuantitatif.
+
+Tahapan investigasi dan pengumpulan fakta di latar belakang dilakukan untuk merumuskan masalah secara akurat melalui langkah-langkah sebagai berikut:
+
+\begin{enumerate}
+    \item Melakukan observasi langsung terhadap ekosistem informasi parlemen saat ini dengan mengakses situs resmi DPR RI, portal JDIH, dan sumber data pemilu (KPU) untuk memahami struktur dan ketersediaan data publik.
+    \item Melakukan simulasi pencarian manual untuk mengevaluasi pengalaman pengguna dalam menelusuri rekam jejak legislator, mulai dari mencari janji kampanye hingga membandingkannya dengan aktivitas di risalah rapat.
+    \item Mengidentifikasi hambatan utama (\textit{pain points}) yang dihadapi publik, seperti fragmentasi sumber data, format dokumen yang tidak terstruktur (PDF), dan ketiadaan mekanisme penautan informasi secara otomatis.
+    \item Menganalisis temuan observasi untuk merumuskan masalah penelitian yang spesifik, yaitu kesenjangan antara ketersediaan data publik dengan kemudahan akses dan pemanfaatannya untuk pengawasan kinerja legislatif.
+\end{enumerate}
+
+Selanjutnya, untuk mencari solusi terhadap masalah yang telah dirumuskan, dilakukan langkah-langkah pencarian, pengelompokan, dan penapisan literatur serta pemilihan solusi sebagai berikut:
+
+\begin{enumerate}
+    \item \textbf{Pencarian Literatur:} Melakukan penelusuran referensi ilmiah melalui basis data akademik seperti Google Scholar dan ResearchGate. Kata kunci yang digunakan meliputi: \textit{"legislative transparency system"}, \textit{"parliamentary monitoring NLP"}, \textit{"named entity recognition political text"}, \textit{"Analytic Hierarchy Process (AHP)"}, dan \textit{"web scraping government data"}.
+    \item \textbf{Pengelompokan Topik:} Mengklasifikasikan literatur yang ditemukan ke dalam domain pengetahuan utama:
+    \begin{enumerate}
+        \item Konsep transparansi parlemen dan akuntabilitas politik.
+        \item Teknologi \textit{Information Retrieval} (IR) dan metode \textit{focused crawling}.
+        \item Metode \textit{Natural Language Processing} (NLP) untuk ekstraksi informasi.
+        \item Metode pengambilan keputusan multikriteria (MCDM), khususnya \textit{Analytic Hierarchy Process} (AHP).
+    \end{enumerate}
+    \item \textbf{Penapisan Literatur:} Menyeleksi sumber informasi berdasarkan relevansi topik, kebaruan (publikasi 5--10 tahun terakhir), dan kredibilitas penerbit. Literatur mengenai implementasi AHP dalam pemilihan teknologi informasi menjadi prioritas untuk mendukung bab analisis masalah.
+    \item \textbf{Penentuan Solusi dengan AHP:} Setelah literatur dan kandidat solusi terkumpul, dilakukan proses pemilihan solusi terbaik menggunakan metode \textit{Analytic Hierarchy Process} (AHP). Langkah ini mencakup penentuan kriteria evaluasi (seperti efisiensi, skalabilitas, biaya), pembobotan kriteria melalui perbandingan berpasangan, dan penilaian alternatif solusi untuk mendapatkan rekomendasi arsitektur sistem yang paling optimal.
+    \item \textbf{Dokumentasi dan Sintesis:} Mencatat temuan penting dari literatur dan hasil perhitungan AHP. Seluruh proses investigasi dan analisis ini didokumentasikan untuk menjamin validitas metodologis penelitian.
+\end{enumerate}
+
+Hasil penggalian informasi dan sintesis teori dari langkah-langkah metodologi di atas selanjutnya akan diuraikan secara komprehensif pada bab berikutnya. Bab II Studi Literatur akan memaparkan landasan teoretis dan tinjauan pustaka yang menjadi fondasi akademik bagi pengembangan sistem \textit{Legislative Activity Tracker} (LAT), termasuk pembahasan mendalam mengenai teknologi NLP, IR, dan kerangka kerja AHP yang digunakan.

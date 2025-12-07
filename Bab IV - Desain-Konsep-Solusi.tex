@@ -1,0 +1,97 @@
+% ==========================================
+% BAB IV DESAIN KONSEP SOLUSI
+% ==========================================
+\chapter{DESAIN KONSEP SOLUSI}
+\label{chap:desain-konsep-solusi}
+
+\section{Diagram Konseptual}
+
+\subsection{Kondisi Sistem (\textit{As-Is})}
+
+Kondisi sistem transparansi parlemen saat ini telah dianalisis secara mendalam pada Sub-bab III.1.1 Analisis Permasalahan, di mana teridentifikasi sejumlah hambatan struktural yang menghambat pengawasan publik yang efektif. Untuk memberikan konteks perbandingan yang jelas, Gambar IV.1 berikut merangkum kembali alur kerja (\textit{workflow}) yang harus dilalui oleh pengguna baik masyarakat umum maupun peneliti ketika berupaya mengevaluasi konsistensi kinerja seorang legislator terhadap janji kampanyenya dengan menggunakan ekosistem data DPR RI yang ada saat ini.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/gambar3_1.png}
+	\caption{Kondisi Transparansi Parlemen (\textit{as-is}) }
+	\label{gambar:kondisi_as_is}
+\end{figure}
+Sebagaimana terlihat dalam diagram, seluruh proses pemantauan masih bersifat manual dan terfragmentasi. Pengguna harus memulai dengan mencari profil dan dokumen janji kampanye dari sumber terpisah (misalnya situs KPU atau portal informasi pemilu), kemudian beralih ke situs resmi DPR untuk mencari jadwal dan risalah rapat yang relevan. Setelah menemukan dokumen yang sesuai, pengguna harus mengunduh file PDF satu per satu, membaca secara manual untuk menemukan nama atau topik yang dicari, dan mencatat informasi aktivitas serta sikap legislator secara terpisah. Tahap terakhir adalah melakukan komparasi manual antara catatan janji kampanye dengan catatan aktivitas faktual untuk menarik kesimpulan mengenai konsistensi kinerja.
+
+Alur kerja ini mencerminkan secara langsung keempat masalah utama yang telah diidentifikasi: fragmentasi data (M-01) yang memaksa pengguna berpindah-pindah platform, ketiadaan \textit{event log} terstruktur (M-02) yang mengharuskan pembacaan dokumen naratif panjang, diskoneksi semantik (M-03) yang membuat penautan janji-realisasi harus dilakukan secara subjektif, dan inferensi sikap berbasis asumsi (M-04) karena tidak tersedianya data \textit{voting} atau transkrip pidato individual yang eksplisit. Kondisi ini mengakibatkan beban kerja kognitif yang sangat tinggi bagi pengguna, menjadikan pengawasan kinerja parlemen sebagai aktivitas yang hanya dapat dilakukan oleh pihak dengan sumber daya waktu dan keahlian penelusuran data yang memadai.
+
+\subsection{Kondisi Sistem \textit{Legislative Activity Tracker}}
+
+Sebagai respon terhadap berbagai hambatan yang diuraikan pada kondisi \textit{as-is}, sistem \textit{Legislative Activity Tracker} (LAT) dirancang untuk mereduksi langkah manual pengguna secara drastis dan memindahkan beban pengolahan informasi ke dalam mekanisme otomatis. Gambar IV.2 menggambarkan rancangan alur aktivitas (\textit{activity diagram}) kondisi \textit{Legislative Activity Tracker}, ketika solusi LAT telah diimplementasikan. Diagram ini menggunakan dua \textit{swimlane}, yaitu Pengguna dan Sistem LAT, untuk menonjolkan pergeseran peran antara manusia dan mesin.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/Kondisi LAT.drawio.png}
+	\caption{Kondisi Transparansi Parlemen \textit{Legislative Activity Tracker} }
+	\label{gambar:kondisi_lat}
+\end{figure}
+Pada rancangan \textit{Legislative Activity Tracker} ini, peran pengguna direduksi menjadi dua langkah utama: mengakses \textit{dashboard} dan memasukkan parameter pencarian, kemudian menginterpretasikan hasil yang disajikan. Seluruh pekerjaan yang sebelumnya dilakukan secara manual mulai dari mencari dokumen di berbagai situs, mengunduh PDF, membaca satu per satu, hingga mencatat dan mengomparasi informasi dipindahkan ke dalam mekanisme otomatis di sisi Sistem LAT. Modul akuisisi data dan pemrosesan NLP yang telah dijelaskan pada Bab III bekerja di belakang layar untuk menyediakan basis data terstruktur yang siap dikueri, sementara modul analisis semantik menyusun hubungan eksplisit antara janji kampanye dan aktivitas legislatif.
+
+Dengan demikian, alur \textit{Legislative Activity Tracker} tidak hanya memperpendek jumlah langkah yang harus ditempuh pengguna, tetapi juga mengubah sifat tugas dari kerja administratif berulang menjadi kerja analitis berbasis bukti. Pengguna dapat langsung fokus pada penilaian substansi kinerja legislator, alih-alih tersandera oleh proses teknis penelusuran dan pembacaan dokumen.
+
+\subsection{Perbandingan Sistem As-Is dan Sistem \textit{Legislative Activity Tracker}}
+
+Berdasarkan diagram aktivitas yang telah dipaparkan pada Gambar IV.1 dan Gambar IV.2, terlihat perbedaan fundamental dalam pendekatan pemantauan kinerja legislatif antara kondisi saat ini (\textit{as-is}) dan kondisi yang diusulkan (\textit{Legislative Activity Tracker}). Pada kondisi \textit{as-is}, pengguna memegang kendali penuh atas seluruh rantai proses: mulai dari penemuan dokumen (\textit{discovery}), akuisisi data, pemrosesan (membaca dan mengekstraksi), hingga analisis (komparasi dan evaluasi). Beban kerja kognitif sepenuhnya berada di pundak pengguna, menjadikan proses pengawasan sangat rentan terhadap kelelahan, bias subjektif, dan kesalahan manusia (\textit{human error}). Selain itu, fragmentasi sumber data yang parah memaksa pengguna untuk bertindak sebagai ``integrator manual'' yang harus menyambungkan informasi dari portal KPU, situs DPR, dan media secara mandiri.
+
+Sebaliknya, pada kondisi \textit{Legislative Activity Tracker}, Sistem LAT mengambil alih seluruh beban teknis dan administratif tersebut melalui mekanisme otomatisasi di belakang layar (\textit{backend automation}). Peran pengguna bertransformasi dari seorang ``pengumpul data'' menjadi ``analis informasi''. Pengguna tidak perlu lagi mengetahui kompleksitas lokasi penyimpanan dokumen atau menghabiskan waktu untuk membaca ratusan halaman risalah rapat; mereka cukup berinteraksi dengan antarmuka \textit{dashboard} yang menyajikan hasil olahan data dalam bentuk visualisasi siap pakai. Dengan mendelegasikan tugas pencarian, ekstraksi, dan penautan semantik kepada algoritma sistem, proses pemantauan menjadi jauh lebih efisien, terukur, dan dapat diakses oleh publik secara luas tanpa memerlukan keahlian riset khusus.
+
+\begin{table}[H]
+  \centering
+  \small
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{|p{3cm}|p{6cm}|p{6cm}|}
+    \hline
+    \textbf{Aspek Perbandingan} & \textbf{Sistem Saat Ini (\textit{As-Is})} & \textbf{Sistem Usulan \textit{Legislative Activity Tracker})} \\
+    \hline
+    Titik Akses Data & Terfragmentasi; pengguna harus mengakses banyak portal (KPU, DPR, JDIH) secara terpisah. & Terpusat (\textit{Centralized}); pengguna mengakses satu pintu melalui \textit{dashboard} LAT yang mengintegrasikan seluruh sumber data. \\
+    \hline
+    Metode Pengolahan & Manual; pengguna membaca dokumen PDF satu per satu untuk menemukan informasi relevan. & Otomatis; sistem menggunakan \textit{Web Crawler} dan \textit{NLP Engine} untuk mengekstrak data secara massal. \\
+    \hline
+    Format Informasi & Dokumen naratif mentah (\textit{Unstructured PDF}) yang sulit diolah kembali. & Data peristiwa terstruktur (\textit{Structured Event Log}) yang siap dikueri, difilter, dan dianalisis. \\
+    \hline
+    Mekanisme Evaluasi & Komparasi manual dan subjektif berdasarkan ingatan atau catatan pribadi pengguna. & Komparasi otomatis berbasis data dengan skor kesesuaian semantik (\textit{Semantic Similarity Score}). \\
+    \hline
+    Efisiensi Waktu & Rendah; membutuhkan waktu berjam-jam hingga berhari-hari untuk satu topik atau anggota. & Tinggi; hasil pencarian dan analisis tersaji secara instan (\textit{real-time}) dalam hitungan detik. \\
+    \hline
+    Skalabilitas & Terbatas; sulit dilakukan untuk memantau seluruh anggota dewan secara bersamaan. & Tinggi; sistem dapat memproses dan memantau aktivitas ratusan anggota dewan secara paralel. \\
+    \hline
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Perbandingan Sistem As-Is dan Sistem LAT Usulan}
+  \label{tbl:perbandingan-as-is-lat}
+\end{table}
+
+\subsection{Diagram Arsitektur Tingkat Tinggi (\textit{High-Level Architecture})}
+
+Untuk merealisasikan alur kerja otomatis yang telah dijelaskan sebelumnya, sistem LAT dibangun di atas arsitektur \textit{pipeline} hibrida yang mengintegrasikan teknik \textit{Information Retrieval} (IR) dan \textit{Natural Language Processing} (NLP). Gambar IV.3 memperlihatkan model konseptual sistem yang terdiri dari tiga lapisan utama: lapisan Sumber Data, lapisan Pemrosesan Inti (\textit{Core Processing}), dan lapisan Presentasi. Diagram ini memetakan aliran data dari dokumen mentah hingga menjadi informasi visual di \textit{dashboard} pengguna.
+
+\begin{figure}[H]
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=0.75\textwidth]{image/Diagram_Konseptual.png}
+  \caption{Diagram Konseptual (\textit{Legislative Activity Tracker})}
+  \label{gambar:diagram_lat}
+\end{figure}
+Arsitektur di atas dirancang secara spesifik untuk menjawab tantangan teknis yang telah diidentifikasi pada Bab III. Berikut adalah penjelasan fungsi setiap komponen utama dalam arsitektur tersebut:
+
+\begin{enumerate}
+    \item Modul Akuisisi Data (\textit{Data Acquisition Module}): Modul ini berfungsi sebagai gerbang awal sistem yang menangani masalah fragmentasi data (M-01). Menggunakan teknik \textit{focused crawling}, modul ini secara otomatis memindai dan mengunduh dokumen terbaru (seperti risalah rapat, laporan singkat, dan dokumen legislasi) dari berbagai subdomain situs DPR RI (dpr.go.id, berkas.dpr, sileg, jdih) serta dokumen profil dan visi-misi dari portal pemilu. Komponen ini memastikan sistem selalu memiliki data terkini tanpa intervensi manual.
+    
+    \item Modul Pemrosesan Cerdas (\textit{Intelligent Processing Module}): Modul ini merupakan inti kecerdasan sistem yang mengatasi masalah data tidak terstruktur (M-02) dan ketiadaan data \textit{voting} (M-04).
+    \begin{enumerate}
+        \item \textit{Document Parser}: Mengubah format dokumen PDF atau pindaian menjadi teks mentah yang dapat dibaca mesin.
+        \item \textit{NLP Engine}: Melakukan ekstraksi entitas bernama (\textit{Named Entity Recognition}) untuk mengenali aktor (nama anggota, fraksi) dan objek (RUU, topik). Selanjutnya, komponen \textit{Event Extraction} mengidentifikasi tindakan spesifik (misalnya: ``menyampaikan pandangan'', ``menginterupsi'', ``menyetujui'') dari narasi risalah rapat untuk membentuk \textit{event log} terstruktur.
+        \item \textit{Semantic Linker}: Menjawab masalah diskoneksi informasi (M-03) dengan menghitung skor kesamaan semantik antara teks janji kampanye dan teks aktivitas legislatif. Komponen ini menciptakan tautan logis (\textit{logical links}) yang memungkinkan pengguna melihat hubungan langsung antara janji dan realisasi.
+    \end{enumerate}
+    
+    \item Modul Penyimpanan Terstruktur (\textit{Structured Storage}): Hasil pemrosesan disimpan dalam basis data relasional yang menyimpan profil anggota, \textit{event log} aktivitas yang telah diekstraksi, serta metadata dokumen sumber. Struktur data ini memungkinkan kueri yang kompleks dan cepat, mendukung kebutuhan skalabilitas sistem.
+    
+    \item Modul Presentasi (\textit{Presentation Layer}): Lapisan ini menyediakan antarmuka berbasis web (\textit{dashboard}) bagi pengguna akhir. Modul ini memvisualisasikan data terstruktur menjadi profil anggota, linimasa aktivitas interaktif, dan grafik komparasi janji-realisasi, serta menyediakan fitur pencarian dan filter data. Antarmuka ini dirancang untuk menyembunyikan kompleksitas teknis di belakang layar, sehingga memberikan pengalaman pengguna yang sederhana dan intuitif.
+\end{enumerate}

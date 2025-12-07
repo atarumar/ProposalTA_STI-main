@@ -1,0 +1,78 @@
+\chapter{LAMPIRAN 2: Penjelasan Detail Alternatif Solusi}
+\begin{longtable}{|p{1.6cm}|p{5cm}|p{6.5cm}|}
+  \caption{Alternatif Solusi dan Masalah yang Ingin Diselesaikan} \label{tbl:alternatif-solusi} \\
+  \hline
+  \textbf{Kode Solusi} & \textbf{Alternatif Solusi} & \textbf{Masalah yang Ingin Diselesaikan} \\
+  \hline
+  \endfirsthead
+  
+  \multicolumn{3}{c}{\tablename\ \thetable\ -- \textit{Lanjutan dari halaman sebelumnya}} \\
+  \hline
+  \textbf{Kode Solusi} & \textbf{Alternatif Solusi} & \textbf{Masalah yang Ingin Diselesaikan} \\
+  \hline
+  \endhead
+  
+  \hline
+  \multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+  \endfoot
+  
+  \hline
+  \endlastfoot
+  
+  S01 &
+  \textbf{Pengembangan Portal Direktori Manual (\textit{Manual Curation})}
+  
+  Membangun basis data profil anggota dan aktivitas yang diinput secara manual oleh tim admin/relawan berdasarkan pemantauan berita dan dokumen fisik, menyerupai model awal platform \textit{civic tech} konvensional. &
+  \textbf{Masalah yang diselesaikan:}
+  
+  M-03: Mencoba mengatasi diskoneksi informasi dengan menyajikan profil dan janji dalam satu halaman.
+  
+  \textbf{Keterbatasan:}
+  
+  Gagal mengatasi M-01 (fragmentasi data) dan M-02 (\textit{event log}) secara \textit{scalable} karena ketergantungan pada tenaga manusia yang lambat dan rentan \textit{human error}. Tidak ada otomatisasi untuk volume data besar. \\
+  \hline
+  
+  S02 &
+  \textbf{Sistem Temu Kembali Dokumen Terpusat (\textit{IR-only System})}
+  
+  Membangun mesin pencari (\textit{search engine}) yang mengindeks seluruh dokumen PDF dari berbagai situs DPR (\textit{crawling}) agar dapat dicari berdasarkan kata kunci, tanpa melakukan ekstraksi struktur data mendalam. &
+  \textbf{Masalah yang diselesaikan:}
+  
+  M-01: Mengatasi masalah data tersebar dengan mengumpulkannya di satu repositori terpusat.
+  
+  \textbf{Keterbatasan:}
+  
+  Gagal mengatasi M-02 (\textit{event log} terstruktur) dan M-04 (\textit{voting data}). \textit{Output} sistem masih berupa dokumen mentah (PDF), sehingga pengguna tetap harus membaca manual untuk menemukan ``siapa melakukan apa''. Tidak ada analisis komparatif otomatis. \\
+  \hline
+  
+  S03 &
+  \textbf{Sistem Ekstraksi Informasi Statis (\textit{IE-only on Local Corpus})}
+  
+  Fokus hanya pada pengembangan algoritma NLP/IE untuk mengekstrak data dari kumpulan dokumen yang sudah diunduh secara lokal (\textit{offline dataset}), tanpa modul \textit{crawling} atau pembaruan otomatis dari sumber web. &
+  \textbf{Masalah yang diselesaikan:}
+  
+  M-02: Menjawab kebutuhan struktur data (\textit{event log}) melalui \textit{parsing} dokumen.
+  
+  M-04: Membantu inferensi posisi fraksi dari teks.
+  
+  \textbf{Keterbatasan:}
+  
+  Gagal mengatasi M-01 secara berkelanjutan karena tidak memiliki mekanisme \textit{discovery} data baru dari web DPR yang dinamis. Sistem akan cepat usang (\textit{obsolete}) tanpa \textit{pipeline} akuisisi data. \\
+  \hline
+  
+  S04 &
+  \textbf{Arsitektur \textit{Pipeline} Hibrida (\textit{Integrated IR + IE Pipeline})}
+  
+  Mengintegrasikan modul \textit{Information Retrieval} (untuk akuisisi dan manajemen korpus otomatis) dengan modul \textit{Information Extraction} (untuk \textit{parsing} NLP dan pembentukan \textit{event log}), dilengkapi lapisan \textit{Semantic Linking} untuk menghubungkan aktivitas dengan janji kampanye. &
+  \textbf{Masalah yang diselesaikan:}
+  
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item M-01: Menangani fragmentasi melalui \textit{Focused Crawling} terpusat.
+      \item M-02: Menghasilkan \textit{event log} terstruktur per anggota/fraksi melalui NLP.
+      \item M-03: Menghubungkan janji dan realisasi melalui analisis kesamaan semantik.
+      \item M-04: Memodelkan inferensi sikap politik fraksi secara sistematis.
+  \end{itemize}
+  
+  Solusi ini mencakup penanganan hulu (data mentah) hingga hilir (visualisasi \textit{dashboard}). \\
+  \hline
+\end{longtable}

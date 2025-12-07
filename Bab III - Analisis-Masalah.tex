@@ -1,0 +1,280 @@
+% % ============================================================================================
+% % BAB III ANALISIS MASALAH
+% % Pembagian subbab tidak rigid dan dapat bervariasi. Bab ini minimal berisi analisis kebutuhan
+% % fungsional dan nonfungsional, analisis berbagai alternatif solusi yang dapat ditawarkan, dan
+% % metode pemilihan solusi yang diusulkan.
+% % ============================================================================================
+\chapter{ANALISIS MASALAH}
+\label{chap:analisis-masalah}
+
+\section{Analisis Kondisi Saat Ini}
+
+Analisis kondisi saat ini bertujuan untuk mengidentifikasi permasalahan dalam 
+proses yang berlangsung serta mengevaluasi peluang yang muncul darinya. 
+Analisis ini akan menjadi landasan dalam merumuskan kebutuhan sistem. 
+
+\subsection{Analisis Permasalahan}
+Kondisi transparansi parlemen di Indonesia saat ini masih terjebak pada paradigma ketersediaan dokumen (\textit{availability}) semata, belum mencapai tahap aksesibilitas data (\textit{accessibility}) yang mendukung akuntabilitas fungsional. Berdasarkan kerangka Transparansi Kinerja yang dibahas pada Sub bab II.1.2, transparansi yang efektif menuntut adanya data terukur mengenai \textit{output} legislasi dan partisipasi anggota dewan agar publik dapat membandingkan janji politik dengan realisasi kerja. 
+
+Namun, realitas di lapangan menunjukkan bahwa informasi yang disajikan oleh kanal resmi DPR RI (seperti dpr.go.id dan parlementaria) lebih bersifat seremonial dan naratif, berfokus pada berita kegiatan daripada substansi perdebatan kebijakan. Absennya data kinerja yang granular ini menyebabkan terputusnya rantai informasi antara mandat konstituen dan tindakan wakil rakyat, yang sebagaimana dijelaskan dalam Sub bab II.3.1, berkontribusi langsung pada rendahnya kepercayaan publik (\textit{political trust}) terhadap institusi legislatif.
+
+Secara arsitektural, ekosistem informasi DPR RI saat ini terfragmentasi ke dalam beberapa \textit{silo data} yang tidak saling terhubung. Mengacu pada tantangan teknis yang diuraikan dalam Sub bab II.5, data legislatif tersebar di berbagai subdomain terpisah tanpa skema integrasi yang jelas: profil anggota berada di situs utama, naskah akademik dan progres RUU di Sistem Informasi Legislasi (\textit{SILEG}), sementara produk hukum final di Jaringan Dokumentasi dan Informasi Hukum (JDIH). 
+
+Masalah ini diperparah oleh pelanggaran prinsip \textit{Open Government Data} (\textit{OGD}) yang dibahas pada Sub bab II.2.1, di mana data tidak disediakan dalam format yang \textit{machine readable} maupun memiliki interoperabilitas semantik. Tidak adanya pengenal unik (\textit{unique identifier}) yang konsisten menghubungkan seorang legislator di satu sistem dengan aktivitasnya di sistem lain membuat upaya pengawasan komprehensif menjadi sangat sulit dilakukan secara manual, apalagi secara otomatis.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/gambar3_1.png}
+	\caption{Kondisi Transparansi Parlemen (\textit{as-is}) }
+	\label{gambar:kondisi_as_is}
+\end{figure}
+
+Pada level teknis yang lebih mendalam, kualitas data mentah menjadi hambatan utama bagi penerapan analisis komputasional. Sebagian besar rekam jejak aktivitas legislatif tersimpan dalam format dokumen tidak terstruktur, seperti Risalah Rapat berupa \textit{PDF} naratif yang panjang atau bahkan hasil pindaian (\textit{scanned documents}) untuk arsip lama. 
+
+Sesuai dengan tinjauan Sub bab II.6.3 mengenai tantangan pra pemrosesan dokumen, format semacam ini menyulitkan mesin untuk membedakan antara elemen struktural (seperti daftar hadir atau keputusan fraksi) dan konten substansial (argumen perdebatan). Tanpa melalui proses \textit{Information Extraction} (\textit{IE}) dan \textit{OCR} yang canggih sebagaimana dibahas pada Sub bab II.6.1.4 dan II.6.3.1, kekayaan informasi yang terkandung dalam ribuan halaman risalah ini tetap terkubur sebagai \textit{dark data} yang tidak dapat diolah menjadi wawasan analitis.
+
+Puncaknya, kelemahan sistem saat ini adalah ketiadaan mekanisme log peristiwa (\textit{event log}) yang sistematis untuk memetakan aktivitas harian legislator. Platform pemantauan eksternal seperti JariUngu, yang dibahas pada Sub bab II.4.2, telah berupaya mengisi celah informasi ini, namun masih terbatas pada penyajian profil statis dan agregasi berita, bukan pelacakan aktivitas berbasis urutan waktu (\textit{temporal tracking}). 
+
+Belum ada sistem yang mampu memodelkan hubungan kausal secara eksplisit: Anggota X berjanji A saat kampanye, kemudian hadir di Rapat B, dan Fraksinya mengambil Sikap C yang mendukung atau menolak Janji A. Ketiadaan model data relasional ini, yang seharusnya dapat dijembatani melalui teknik \textit{Semantic Linking} (Sub bab II.6.5), menjadikan evaluasi konsistensi politik anggota dewan, yang merupakan tujuan utama dari transparansi kinerja, mustahil dilakukan secara objektif dan berskala besar dengan infrastruktur yang ada saat ini.
+
+Berdasarkan analisis kondisi faktual di atas, dapat disimpulkan bahwa hambatan transparansi DPR RI bersifat multidimensi, mencakup aspek tata kelola data yang terfragmentasi hingga keterbatasan infrastruktur teknis dalam pengolahan dokumen. Guna memfasilitasi perumusan solusi yang terarah, permasalahan-permasalahan tersebut diidentifikasi dan dikelompokkan ke dalam empat poin masalah fundamental (M-01 hingga M-04) yang akan menjadi acuan utama pengembangan sistem, sebagaimana dirangkum dalam Tabel III.1 berikut.
+
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\textwidth}{|l|X|l|l|}
+    \hline
+    \textbf{Kode} & \textbf{Deskripsi Masalah} \\
+    \hline
+    M-01 & Data aktivitas legislatif tersebar (terfragmentasi) di berbagai kanal (situs DPR, SILEG, JDIH) dan tersaji dalam format dokumen tidak terstruktur (PDF/Scan) yang sulit diolah mesin. \\
+    \hline
+    M-02 & Ketiadaan mekanisme pencatatan historis (\textit{event log}) yang merinci aktivitas anggota secara individual (siapa melakukan apa, di mana, dan kapan). \\
+    \hline
+    M-03 & Diskoneksi semantik antara mandat politik (janji kampanye) dengan realisasi kinerja faktual, menyebabkan publik sulit melakukan evaluasi konsistensi legislator.\\
+    \hline
+    M-04 & Absennya data pemungutan suara individual (\textit{roll-call votes}) yang memaksa publik menebak posisi anggota hanya berdasarkan asumsi keanggotaan fraksi. \\
+    \hline
+  \end{tabularx}
+  \caption{Daftar Identifikasi Masalah (M)}
+  \label{tbl:identifikasi-masalah}
+\end{table}
+
+\subsection{Analisis Peluang}
+
+Di balik kompleksitas permasalahan yang teridentifikasi, perkembangan teknologi pemrosesan data modern menawarkan peluang strategis untuk merevolusi cara publik mengawasi parlemen. Ketersediaan dokumen digital, meskipun terfragmentasi, sesungguhnya merupakan bahan baku yang kaya (\textit{data lake}) jika dikelola dengan arsitektur yang tepat. Penerapan metode komputasional seperti \textit{Information Retrieval} (IR) dan \textit{Information Extraction} (IE) memungkinkan transformasi dokumen statis menjadi \textit{event log} dinamis secara otomatis, memutus ketergantungan pada kurasi manual yang lambat. Lebih jauh, integrasi teknik analisis semantik membuka jalan bagi terwujudnya pengawasan berbasis bukti (\textit{evidence-based oversight}), di mana konsistensi antara janji kampanye dan realisasi kinerja dapat diukur secara kuantitatif. Peluang-peluang pengembangan sistem yang muncul dari kesenjangan kondisi saat ini dirangkum dalam Tabel III.2 berikut.
+
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\textwidth}{|l|X|l|l|}
+    \hline
+    \textbf{Kode} & \textbf{Deskripsi Peluang} \\
+    \hline
+    P-01 & Integrasi data terpusat (\textit{centralized dashboard}) yang menyediakan akses satu pintu terhadap rekam jejak legislator secara komprehensif. \\
+    \hline
+    P-02 & Penerapan teknologi \textit{NLP} dan \textit{IE} untuk mengotomatisasi ekstraksi struktur peristiwa dari dokumen mentah menjadi data siap pakai (\textit{event log}). \\
+    \hline
+    P-03 & Penyediaan analisis komparatif berbasis data (\textit{data driven}) untuk memvisualisasikan keselarasan antara janji kampanye dan realisasi kinerja. \\
+    \hline
+    P-04 & Peningkatan transparansi fungsional melalui penyediaan data terbuka (\textit{open data}) yang dapat diaudit, diverifikasi, dan digunakan ulang oleh publik. \\
+    \hline
+  \end{tabularx}
+  \caption{Daftar Identifikasi Peluang (P)}
+  \label{tbl:identifikasi-peluang}
+\end{table}
+
+\section{Analisis Kebutuhan}
+
+Analisis kebutuhan bertujuan untuk memetakan kesenjangan antara kondisi saat ini dengan solusi yang diharapkan, serta mendefinisikan spesifikasi fungsional yang harus dipenuhi oleh sistem \textit{Legislative Activity Tracker} (LAT). Tahap ini diawali dengan identifikasi masalah dan peluang secara eksplisit, yang kemudian diturunkan menjadi kebutuhan pengguna.
+
+\subsection{Identifikasi Masalah Pengguna}
+
+Pengguna sistem ini terdiri atas masyarakat umum (pemilih) dan peneliti/analis kebijakan. Masing-masing pengguna memiliki kebutuhan serta tantangan yang berbeda dalam proses pencarian, pemantauan, maupun analisis kinerja legislatif. Sistem yang dirancang perlu mengakomodasi permasalahan yang dihadapi oleh setiap pengguna, yang diuraikan sebagai berikut:
+
+\begin{enumerate}
+    \item \textbf{Masyarakat Umum (Pemilih)}
+    \begin{enumerate}
+        \item Kesulitan menemukan profil dan rekam jejak aktivitas anggota DPR dalam satu ekosistem untuk melakukan evaluasi kinerja wakil rakyat.
+        \item Kesulitan menemukan informasi aktivitas yang sesuai dengan preferensi (nama anggota, fraksi, dapil, topik RUU) karena belum banyak platform yang menyediakan layanan pencarian aktivitas secara tergranular.
+        \item Kesulitan membandingkan janji kampanye dengan realisasi kinerja secara langsung karena dokumen visi-misi dan risalah rapat tersimpan di sumber yang terpisah.
+        \item Tidak tersedia sistem notifikasi atau ringkasan aktivitas terbaru, yang membuat pemilih sering tertinggal informasi mengenai keputusan krusial yang diambil wakilnya.
+    \end{enumerate}
+    
+    \item \textbf{Peneliti dan Analis Kebijakan}
+    \begin{enumerate}
+        \item Kesulitan mengumpulkan data aktivitas legislatif secara massal atau menjangkau dokumen historis yang tersebar di berbagai subdomain situs DPR.
+        \item Kurang tersedianya sistem untuk mengelola \textit{dataset} legislatif, melakukan \textit{filter} berdasarkan parameter spesifik, dan mengekspor data secara terpusat dalam satu platform.
+        \item Kurang adanya fitur untuk melakukan analisis tren atau menampilkan statistik kinerja fraksi/anggota secara sistematis.
+        \item Kesulitan mendapatkan konteks keterkaitan antar-dokumen (misalnya hubungan antara dokumen RUU dengan risalah rapat terkait) karena tidak ada sistem penautan referensi yang efisien.
+    \end{enumerate}
+\end{enumerate}
+
+Kebutuhan pengguna ini lebih merangkum dari kebutuhan dari analisis permasalahan dan peluang yang sudah dijelaskan sebelum nya serta merangkum bagaimana sistem dapat membantu pengguna. Tabel III.3 menunjukkan pemetaan kebutuhan pengguna yang telah diidentifikasi untuk mengatasi permasalahan pada proses interaksi antara pengajar, pelajar, dan penyedia tempat belajar. 
+
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\textwidth}{|l|X|l|l|}
+    \hline
+    \textbf{ID} & \textbf{Kebutuhan} & \textbf{Masalah Terkait} & \textbf{Peluang} \\
+    \hline
+    K-01 & Pengguna dapat mencari dan melihat profil anggota DPR beserta riwayat aktivitas legislatifnya (rapat, intervensi, kehadiran) dalam satu linimasa terpadu. & M-01, M-02 & P-01, P-02 \\
+    \hline
+    K-02 & Pengguna dapat melihat perbandingan langsung (\textit{side by side}) antara poin janji kampanye dengan sikap fraksi atau aktivitas anggota pada isu yang relevan. & M-03 & P-03 \\
+    \hline
+    K-03 & Pengguna dapat melakukan filter aktivitas berdasarkan parameter spesifik: Topik RUU, Nama Komisi, Fraksi, atau Rentang Waktu. & M-01 & P-01 \\
+    \hline
+    K-04 & Pengguna (khususnya peneliti) dapat mengakses atau mengunduh data aktivitas dalam format terstruktur (\textit{event log}) untuk keperluan analisis lanjutan. & M-01, M-02 & P-04 \\
+    \hline
+    K-05 & Pengguna dapat memverifikasi klaim data melalui tautan langsung ke dokumen sumber asli (Risalah Rapat, Berita Resmi) yang disediakan sistem. & M-03, M-04 & P-04 \\
+    \hline
+  \end{tabularx}
+  \caption{Analisis Kebutuhan Pengguna}
+  \label{tbl:analisis-kebutuhan-pengguna}
+\end{table}
+
+\subsection{Kebutuhan Fungsional}
+
+Kebutuhan fungsional mendefinisikan fungsi-fungsi spesifik yang harus dijalankan oleh sistem untuk mendukung tujuan transparansi dan pengawasan legislatif. Rincian lengkap mengenai proses \textit{input}, proses, dan \textit{output} setiap fungsi dapat dilihat pada Lampiran. Berikut adalah daftar kebutuhan fungsional sistem:
+
+\begin{enumerate}
+    \item \textbf{FR-01:} Sistem mampu mengakuisisi dan memperbarui dokumen legislatif secara otomatis dari berbagai sumber resmi (\textit{web crawling}).
+    \item \textbf{FR-02:} Sistem mampu mengekstrak struktur peristiwa (\textit{event log}) dari dokumen tidak terstruktur menggunakan teknik NLP dan IE.
+    \item \textbf{FR-03:} Sistem mampu menghitung dan menautkan kesamaan semantik antara janji kampanye dengan aktivitas legislatif (\textit{semantic linking}).
+    \item \textbf{FR-04:} Sistem mampu menampilkan \textit{dashboard} pencarian profil anggota dan riwayat aktivitasnya dengan fitur \textit{filter}.
+    \item \textbf{FR-05:} Sistem mampu memvisualisasikan perbandingan komparatif (\textit{side-by-side}) antara janji kampanye dan realisasi kinerja.
+\end{enumerate}
+
+Penjelasan lebih rinci mengenai spesifikasi setiap kebutuhan fungsional di atas, termasuk deskripsi tujuan, data masukan, tahapan proses, serta format keluaran yang dihasilkan oleh sistem, disajikan secara lengkap dalam Tabel L-1 Spesifikasi Kebutuhan Fungsional yang terdapat pada Lampiran. Tabel tersebut menjabarkan logika teknis operasional sistem dalam memenuhi setiap persyaratan yang telah ditetapkan.
+
+\subsection{Kebutuhan Nonfungsional}
+
+Selain kebutuhan fungsional, sistem juga harus memenuhi sejumlah batasan dan persyaratan kualitas agar dapat beroperasi dengan andal dan memberikan pengalaman pengguna yang baik. Kebutuhan non-fungsional sistem \textit{Legislative Activity Tracker} (LAT) dijabarkan dalam Tabel III.5 berikut.
+
+\begin{longtable}{|l|p{4cm}|p{8cm}|}
+  \caption{Analisis Kebutuhan Non-Fungsional Sistem} \label{tbl:non-functional-requirements} \\
+  \hline
+  \textbf{ID} & \textbf{Kebutuhan Non-Fungsional} & \textbf{Deskripsi} \\
+  \hline
+  \endfirsthead
+  
+  \multicolumn{3}{c}{\tablename\ \thetable\ -- \textit{Lanjutan dari halaman sebelumnya}} \\
+  \hline
+  \textbf{ID} & \textbf{Kebutuhan Non-Fungsional} & \textbf{Deskripsi} \\
+  \hline
+  \endhead
+  
+  \hline
+  \multicolumn{3}{r}{\textit{Bersambung ke halaman berikutnya}} \\
+  \endfoot
+  
+  \hline
+  \endlastfoot
+  
+  NFR-01 & Kinerja (\textit{Performance}) & Sistem harus mampu menampilkan hasil pencarian profil atau aktivitas dalam waktu kurang dari 3 detik pada kondisi koneksi internet standar, guna menjamin kenyamanan pengguna. \\
+  \hline
+  
+  NFR-02 & Ketersediaan (\textit{Availability}) & Sistem harus dapat diakses oleh pengguna 24 jam sehari, 7 hari seminggu, dengan target \textit{uptime} minimal 99\% selama jam operasional normal. \\
+  \hline
+  
+  NFR-03 & Skalabilitas (\textit{Scalability}) & Arsitektur sistem, khususnya basis data \textit{event log}, harus dirancang untuk menampung penambahan volume data dokumen harian secara terus-menerus tanpa degradasi performa yang signifikan. \\
+  \hline
+  
+  NFR-04 & Integritas Data (\textit{Data Integrity}) & Sistem harus menjamin bahwa setiap entri data aktivitas memiliki tautan referensi (\textit{provenance link}) yang valid ke dokumen sumber asli, sehingga data yang disajikan dapat diverifikasi kebenarannya. \\
+  \hline
+  
+  NFR-05 & Ketahanan (\textit{Robustness}) & Modul \textit{crawler} dan \textit{parser} sistem harus memiliki mekanisme penanganan kesalahan (\textit{error handling}) yang baik, sehingga sistem tidak berhenti total saat menemui format dokumen PDF yang rusak atau tidak standar. \\
+  \hline
+  
+  NFR-06 & Kompatibilitas (\textit{Compatibility}) & Antarmuka \textit{dashboard} sistem harus bersifat responsif (\textit{web-responsive}) dan dapat diakses dengan tampilan yang baik melalui berbagai peramban web modern (\textit{Chrome, Firefox, Edge}) di perangkat \textit{desktop} maupun \textit{mobile}. \\
+  \hline
+\end{longtable}
+
+\section{Analisis Pemilihan Solusi}
+
+Analisis pemilihan solusi bertujuan untuk mengidentifikasi kebutuhan dari setiap 
+permasalahan yang dihadapi pengguna, kemudian akan dirumuskan sejumlah 
+alternatif solusi yang relevan. Setelah itu, solusi yang paling relevan akan dipilih 
+untuk dirancang. 
+
+\subsection{Alternatif Solusi}
+
+Alternatif solusi merumuskan berbagai strategi pendekatan yang mungkin diambil untuk membangun sistem pemantauan legislatif. Berikut adalah ringkasan daftar alternatif solusi dari Lampiran 2. Penjelasan Detail Alternatif Solusi yang dipertimbangkan:
+
+\begin{enumerate}
+    \item S01: Pengembangan Portal Direktori Manual (\textit{Manual Curation})
+    
+    Membangun basis data profil anggota dan aktivitas yang diinput secara manual oleh tim admin/relawan berdasarkan pemantauan berita dan dokumen fisik, menyerupai model awal platform \textit{civic tech} konvensional.
+    
+    \begin{enumerate}
+        \item Masalah yang diselesaikan: M-03 (Mencoba mengatasi diskoneksi informasi dengan menyajikan profil dan janji dalam satu halaman).
+        \item Keterbatasan: Gagal mengatasi M-01 dan M-02 secara \textit{scalable} karena ketergantungan pada tenaga manusia yang lambat dan rentan \textit{human error}.
+    \end{enumerate}
+    
+    \item S02: Sistem Temu Kembali Dokumen Terpusat (\textit{IR-Only System})
+    
+    Membangun mesin pencari (\textit{search engine}) yang mengindeks seluruh dokumen PDF dari berbagai situs DPR (\textit{crawling}) agar dapat dicari berdasarkan kata kunci, tanpa melakukan ekstraksi struktur data mendalam.
+    
+    \begin{enumerate}
+        \item Masalah yang diselesaikan: M-01 (Mengatasi masalah data tersebar dengan mengumpulkannya di satu repositori terpusat).
+        \item Keterbatasan: Gagal mengatasi M-02 dan M-04. \textit{Output} sistem masih berupa dokumen mentah (PDF), sehingga pengguna tetap harus membaca manual.
+    \end{enumerate}
+    
+    \item S03: Sistem Ekstraksi Informasi Statis (\textit{IE-Only on Local Corpus})
+    
+    Fokus hanya pada pengembangan algoritma NLP/IE untuk mengekstrak data dari kumpulan dokumen yang sudah diunduh secara lokal (\textit{offline dataset}), tanpa modul \textit{crawling} atau pembaruan otomatis.
+    
+    \begin{enumerate}
+        \item Masalah yang diselesaikan: M-02 (Menjawab kebutuhan struktur data \textit{event log}) dan M-04 (Membantu inferensi posisi fraksi).
+        \item Keterbatasan: Gagal mengatasi M-01 secara berkelanjutan karena tidak memiliki mekanisme \textit{discovery} data baru dari web DPR yang dinamis.
+    \end{enumerate}
+    
+    \item S04: Arsitektur \textit{Pipeline} Hibrida (\textit{Integrated IR + IE Pipeline})
+    
+    Mengintegrasikan modul \textit{Information Retrieval} (untuk akuisisi dan manajemen korpus otomatis) dengan modul \textit{Information Extraction} (untuk \textit{parsing} NLP dan pembentukan \textit{event log}), dilengkapi lapisan \textit{Semantic Linking} untuk menghubungkan aktivitas dengan janji kampanye.
+    
+    \begin{enumerate}
+        \item Masalah yang diselesaikan: M-01, M-02, M-03, dan M-04 secara komprehensif. Solusi ini mencakup penanganan hulu (data mentah) hingga hilir (visualisasi \textit{dashboard}).
+        \item Keterbatasan: Memiliki kompleksitas implementasi yang paling tinggi dibandingkan opsi lain karena memerlukan pengembangan dua modul utama sekaligus (\textit{IR} dan \textit{IE}). Selain itu, akurasi ekstraksi data bergantung pada performa model \textit{NLP} yang mungkin menghasilkan kesalahan (\textit{false positives/negatives}) pada dokumen dengan struktur yang sangat tidak baku.
+      \end{enumerate}
+\end{enumerate}
+
+
+\subsection{Analisis Penentuan Solusi}
+
+Untuk menentukan solusi terbaik dari alternatif yang telah diusulkan, dilakukan analisis kuantitatif menggunakan metode \textit{Analytical Hierarchy Process} (AHP). Proses ini diawali dengan pembentukan struktur hierarki keputusan (sebagaimana pada Gambar III.2), kemudian dilanjutkan dengan penilaian perbandingan berpasangan antar kriteria dan antar alternatif.
+
+\begin{figure}[H] % pilihan opsi yang disarankan: t = top, b = bottom, h = here
+	\centering
+  \captionsetup{justification=centering}
+    	\includegraphics[width=1\textwidth]{image/AHP.png}
+	\caption{Struktur (\textit{Analytical Hierarchy Process}) }
+	\label{gambar:struktur_ahp}
+\end{figure}
+
+Penilaian perbandingan dilakukan berdasarkan Skala Saaty, yang memberikan nilai numerik untuk merepresentasikan tingkat kepentingan relatif antara dua elemen. Rincian skala penilaian yang digunakan disajikan pada Lampiran 3. Rincian Analisis Penentuan Solusi berikut.
+
+\begin{table}[h]
+  \centering
+  \small
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{|l|c|c|c|c|c|c|}
+    \hline
+    \textbf{Alternatif} & \textbf{Efektivitas} & \textbf{Skalabilitas} & \textbf{Dampak} & \textbf{Kemudahan} & \textbf{Kualitas} & \textbf{Bobot Global} \\
+    & \textbf{(0.348)} & \textbf{(0.136)} & \textbf{(0.348)} & \textbf{(0.036)} & \textbf{(0.136)} & \textbf{(Skor Akhir)} \\
+    \hline
+    S01 (Manual) & 0.016 & 0.007 & 0.070 & 0.018 & 0.034 & 0.145 \\
+    \hline
+    S02 (IR) & 0.035 & 0.048 & 0.035 & 0.011 & 0.014 & 0.143 \\
+    \hline
+    S03 (IE) & 0.072 & 0.007 & 0.035 & 0.004 & 0.041 & 0.159 \\
+    \hline
+    S04 (Hibrida) & 0.223 & 0.075 & 0.209 & 0.002 & 0.048 & 0.557 \\
+    \hline
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Perhitungan Bobot Akhir Alternatif Solusi}
+  \label{tbl:bobot-akhir-solusi}
+\end{table}
+
+Berdasarkan hasil analisis dan perhitungan bobot prioritas kriteria (Tabel III.5), didapatkan bahwa Efektivitas Solusi (K1) dan Dampak Transparansi (K3) memiliki bobot yang paling tinggi dibandingkan dengan kriteria yang lain. Hal ini mengindikasikan bahwa kemampuan solusi dalam menjawab seluruh permasalahan secara komprehensif dan memberikan manfaat maksimal bagi publik menjadi prioritas utama.
+
+Terdapat empat usulan solusi yang dievaluasi, antara lain Pengembangan Portal Direktori Manual (S01), Sistem Temu Kembali Dokumen (S02), Sistem Ekstraksi Informasi Statis (S03), dan Arsitektur \textit{Pipeline} Hibrida (S04). Berdasarkan perhitungan bobot global yang disajikan pada Lampiran 3. Rincian Analisis Penentuan Solusi, dapat ditentukan bahwa Arsitektur \textit{Pipeline} Hibrida (S04) dengan skor akhir 0.557 menjadi solusi yang akan dipilih untuk proyek kali ini. Meskipun solusi ini memiliki tingkat kesulitan implementasi tertinggi, kemampuannya dalam memberikan efektivitas dan dampak yang paling signifikan menjadikannya pilihan yang paling optimal.

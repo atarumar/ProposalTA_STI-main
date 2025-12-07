@@ -1,0 +1,133 @@
+\chapter{LAMPIRAN 1: Detail Kebutuhan Fungsional}
+\begin{longtable}{|l|p{4.5cm}|p{7cm}|}
+  \caption{Analisis Kebutuhan Fungsional Sistem} \label{tbl:functional-requirements} \\
+  \hline
+  \textbf{ID} & \textbf{Functional Requirement} & \textbf{Deskripsi} \\
+  \hline
+  \endfirsthead
+  
+  \multicolumn{3}{c}{\tablename\ \thetable\ -- \textit{Lanjutan dari halaman sebelumnya}} \\
+  \hline
+  \textbf{ID} & \textbf{Functional Requirement} & \textbf{Deskripsi} \\
+  \hline
+  \endhead
+  
+  \hline
+  \multicolumn{3}{r}{} \\
+  \endfoot
+  
+  \hline
+  \endlastfoot
+  
+  FR-01 & Sistem mampu mengakuisisi dan memperbarui dokumen legislatif secara otomatis dari berbagai sumber resmi (\textit{web crawling}). & 
+  \textbf{Tujuan:}
+  Mengumpulkan data mentah (dokumen) dari sumber yang terfragmentasi ke dalam satu repositori terpusat untuk diproses lebih lanjut.
+  
+  \textbf{Masukan:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Daftar URL target (dpr.go.id, berkas.dpr, dll).
+      \item Parameter \textit{crawling} (frekuensi, tipe file).
+  \end{itemize}
+  
+  \textbf{Proses:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Sistem menjalankan \textit{crawler} sesuai jadwal.
+      \item Sistem mengunduh dokumen baru.
+      \item Sistem menyimpan metadata sumber.
+  \end{itemize}
+  
+  \textbf{Keluaran:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Koleksi dokumen PDF/HTML mentah di penyimpanan lokal sistem.
+  \end{itemize} \\
+  \hline
+  
+  FR-02 & Sistem mampu mengekstrak struktur peristiwa (\textit{event log}) dari dokumen tidak terstruktur menggunakan teknik NLP dan IE. & 
+  \textbf{Tujuan:}
+  Mengubah teks naratif (risalah/laporan) menjadi data terstruktur yang mencatat ``siapa'', ``apa'', ``kapan'', dan ``di mana''.
+  
+  \textbf{Masukan:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Dokumen PDF hasil akuisisi (FR-01).
+      \item Model NER (\textit{Named Entity Recognition}) dan aturan ekstraksi.
+  \end{itemize}
+  
+  \textbf{Proses:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Sistem melakukan \textit{parsing} teks dan OCR (jika perlu).
+      \item Sistem mengenali entitas (Anggota, Fraksi, RUU).
+      \item Sistem mendeteksi aksi/peristiwa.
+  \end{itemize}
+  
+  \textbf{Keluaran:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Tabel basis data \textit{Event Log} (\textit{Legislative Activities}).
+  \end{itemize} \\
+  \hline
+  
+  FR-03 & Sistem mampu menghitung dan menautkan kesamaan semantik antara janji kampanye dengan aktivitas legislatif (\textit{semantic linking}). & 
+  \textbf{Tujuan:}
+  Menghubungkan dua \textit{dataset} terpisah (Janji vs Aktivitas) berdasarkan kemiripan topik/konteks untuk analisis konsistensi.
+  
+  \textbf{Masukan:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Data Janji Kampanye (Visi-Misi).
+      \item Data \textit{Event Log} (FR-02).
+  \end{itemize}
+  
+  \textbf{Proses:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Sistem menghitung skor kesamaan (\textit{similarity score}) antar teks.
+      \item Sistem menetapkan \textit{link} jika skor melebihi ambang batas.
+  \end{itemize}
+  
+  \textbf{Keluaran:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Tabel Relasi Janji-Aktivitas (\textit{Linked Data}).
+  \end{itemize} \\
+  \hline
+  
+  FR-04 & Sistem mampu menampilkan \textit{dashboard} pencarian profil anggota dan riwayat aktivitasnya dengan fitur \textit{filter}. & 
+  \textbf{Tujuan:}
+  Memudahkan pengguna melihat rekam jejak legislator secara granular dan terorganisir.
+  
+  \textbf{Masukan:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Kata kunci pencarian (Nama Anggota/Fraksi/Topik).
+      \item Parameter \textit{filter} (Tahun, Komisi, Jenis Rapat).
+  \end{itemize}
+  
+  \textbf{Proses:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Sistem menerima \textit{query} dari pengguna.
+      \item Sistem mengambil data dari basis data \textit{Event Log}.
+  \end{itemize}
+  
+  \textbf{Keluaran:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Halaman Profil Anggota dengan linimasa aktivitas yang relevan.
+  \end{itemize} \\
+  \hline
+  
+  FR-05 & Sistem mampu memvisualisasikan perbandingan komparatif (\textit{side-by-side}) antara janji kampanye dan realisasi kinerja. & 
+  \textbf{Tujuan:}
+  Menyajikan bukti empiris konsistensi politik secara intuitif kepada pengguna.
+  
+  \textbf{Masukan:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item ID Anggota yang dipilih.
+      \item Topik isu yang ingin dibandingkan.
+  \end{itemize}
+  
+  \textbf{Proses:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Sistem mengambil data Janji dan Aktivitas yang sudah tertaut (FR-03).
+      \item Sistem menyandingkan keduanya dalam tampilan UI.
+  \end{itemize}
+  
+  \textbf{Keluaran:}
+  \begin{itemize}[leftmargin=*,noitemsep,topsep=0pt]
+      \item Visualisasi/Tabel Komparasi ``Janji vs Realisasi''.
+  \end{itemize} \\
+  \hline
+\end{longtable}

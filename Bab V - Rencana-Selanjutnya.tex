@@ -1,0 +1,208 @@
+% ==========================================
+% BAB V RENCANA SELANJUTNYA
+% ==========================================
+\chapter{RENCANA SELANJUTNYA}
+\label{chap:rencana-selanjutnya}
+
+Bab ini menguraikan langkah-langkah strategis yang akan ditempuh untuk merealisasikan desain konsep \textit{Legislative Activity Tracker} (LAT) menjadi sistem yang fungsional. Rencana ini mencakup tahapan implementasi teknis mulai dari akuisisi data hingga pengembangan antarmuka pengguna, metode evaluasi untuk mengukur kinerja sistem, serta analisis risiko guna mengantisipasi potensi hambatan selama proses pengembangan.
+
+\section{Rencana Implementasi}
+
+Rencana implementasi menjabarkan peta jalan teknis (\textit{technical roadmap}) yang terstruktur untuk membangun komponen-komponen sistem LAT. Proses ini dirancang secara bertahap untuk memastikan setiap modul mulai dari \textit{backend} pemrosesan data hingga \textit{frontend} visualisasi dapat terintegrasi dengan baik dan memenuhi kebutuhan fungsional yang telah ditetapkan.
+
+\subsection{Langkah-Langkah Implementasi}
+
+Proses pengembangan sistem LAT dibagi menjadi empat fase utama yang dilakukan secara sekuensial, dengan fokus pada transformasi data mentah menjadi informasi yang dapat diakses publik.
+
+\begin{enumerate}
+    \item \textbf{Fase 1: Akuisisi Data (\textit{Data Acquisition})}
+    
+    Fase ini berfokus pada pembangunan infrastruktur pengumpulan data otomatis. Langkah-langkah kuncinya meliputi:
+    \begin{enumerate}
+        \item Pengembangan skrip \textit{web crawler} khusus untuk memindai dan mengunduh dokumen risalah rapat, agenda, dan legislasi dari subdomain situs DPR RI (\texttt{dpr.go.id}, \texttt{berkas.dpr.go.id}).
+        \item Pengembangan skrip untuk mengumpulkan data profil anggota dan dokumen visi-misi dari portal KPU atau sumber data pemilu terverifikasi.
+        \item Penyiapan repositori penyimpanan data mentah (\textit{raw data storage}) untuk menampung fail PDF dan HTML hasil unduhan.
+    \end{enumerate}
+
+    \item \textbf{Fase 2: Pemrosesan dan Ekstraksi Teks (\textit{NLP Backend})}
+    
+    Fase ini merupakan inti dari kecerdasan sistem, di mana dokumen tidak terstruktur diolah menjadi data terstruktur.
+    \begin{enumerate}
+        \item Implementasi modul \textit{PDF Parser} dan OCR (\textit{Optical Character Recognition}) untuk mengekstrak teks dari dokumen digital maupun hasil pindai.
+        \item Pelatihan dan penyesuaian (\textit{fine-tuning}) model \textit{Named Entity Recognition} (NER) untuk mendeteksi entitas spesifik seperti Nama Anggota, Fraksi, Komisi, dan Topik RUU.
+        \item Pengembangan algoritma \textit{Event Extraction} untuk mengidentifikasi aktivitas legislator (misalnya: bertanya, mengusulkan, menyetujui) dari narasi risalah.
+        \item Implementasi modul \textit{Semantic Linker} menggunakan model bahasa (seperti IndoBERT) untuk menghitung skor relevansi antara teks janji kampanye dan teks aktivitas.
+    \end{enumerate}
+
+    \item \textbf{Fase 3: Pengembangan Basis Data dan API}
+    
+    Fase ini bertujuan menyediakan akses data yang efisien bagi aplikasi pengguna.
+    \begin{enumerate}
+        \item Perancangan skema basis data relasional untuk menyimpan tabel Anggota, Janji, \textit{Event Log}, dan relasinya.
+        \item Pengembangan \textit{RESTful API} sebagai jembatan komunikasi data, menyediakan \textit{endpoint} untuk pencarian profil, riwayat aktivitas, dan statistik komparasi.
+    \end{enumerate}
+
+    \item \textbf{Fase 4: Pengembangan Antarmuka Pengguna (\textit{Frontend})}
+    
+    Fase terakhir adalah pembangunan \textit{dashboard} visualisasi.
+    \begin{enumerate}
+        \item Desain antarmuka web (\textit{UI/UX Design}) yang intuitif untuk fitur pencarian dan profil anggota.
+        \item Implementasi komponen visualisasi interaktif, seperti linimasa aktivitas (\textit{timeline}) dan grafik batang untuk skor kesesuaian janji-realisasi.
+        \item Integrasi \textit{frontend} dengan API untuk menampilkan data secara dinamis.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Kebutuhan Alat dan Lingkungan Pengembangan}
+
+Pengembangan sistem LAT membutuhkan serangkaian perangkat lunak, pustaka (\textit{libraries}), dan lingkungan infrastruktur yang spesifik untuk mendukung proses \textit{crawling}, analisis teks berbasis AI, hingga penyajian data web. Rincian kebutuhan alat dan teknologi yang akan digunakan disajikan pada Tabel \ref{tab:kebutuhan-alat}.
+
+\begin{table}[h]
+    \centering
+    \caption{Daftar Kebutuhan Alat dan Teknologi Pengembangan}
+    \label{tab:kebutuhan-alat}
+    \begin{adjustbox}{max width=\textwidth}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|p{4cm}|p{4cm}|p{6cm}|}
+        \hline
+        \textbf{Kategori} & \textbf{Nama Alat/Teknologi} & \textbf{Fungsi dan Kegunaan} \\
+        \hline
+        Bahasa Pemrograman & Python & Pengembangan modul \textit{backend}, skrip \textit{crawler}, dan pemrosesan NLP. \\
+        \hline
+        \textit{Web Framework} & Flask / FastAPI & Membangun \textit{RESTful API} untuk melayani permintaan data dari \textit{frontend}. \\
+        \hline
+        \textit{Frontend Library} & React.js / Vue.js & Membangun antarmuka pengguna (\textit{dashboard}) yang interaktif dan responsif. \\
+        \hline
+        Basis Data & PostgreSQL & Menyimpan data terstruktur (\textit{Event Log}, Profil, Janji) dengan relasi yang kompleks. \\
+        \hline
+        \textit{Scraping Tools} & Scrapy / Selenium & Kerangka kerja untuk melakukan akuisisi data otomatis dari situs web dinamis. \\
+        \hline
+        Pustaka NLP / AI & HuggingFace Transformers, PyTorch, IndoBERT & Menyediakan model pra-latih dan kerangka kerja untuk tugas NER, klasifikasi teks, dan analisis semantik. \\
+        \hline
+        OCR & Tesseract / pdfPlumber & Mengekstrak teks dari dokumen PDF berbasis gambar atau teks. \\
+        \hline
+        Lingkungan Pengembangan & VS Code, Google Colab & Editor kode dan lingkungan komputasi awan untuk pelatihan model AI. \\
+        \hline
+    \end{tabular}
+    \end{adjustbox}
+\end{table}
+
+\section{Rencana Evaluasi}
+
+Evaluasi merupakan tahap krusial untuk memastikan bahwa sistem LAT yang dikembangkan tidak hanya berfungsi secara teknis, tetapi juga mampu menghasilkan luaran informasi yang akurat dan dapat dipercaya. Rencana evaluasi ini mencakup metodologi pengujian yang akan diterapkan pada setiap komponen sistem, serta penetapan indikator atau kriteria keberhasilan kuantitatif sebagai tolok ukur pencapaian tujuan penelitian.
+
+\subsection{Metode Pengujian}
+
+Pengujian sistem akan dilakukan melalui tiga pendekatan utama untuk memverifikasi kinerja modul kecerdasan buatan, fungsionalitas aplikasi, dan integrasi sistem secara keseluruhan.
+
+\begin{enumerate}
+    \item \textbf{Pengujian Akurasi Model (\textit{NLP Model Testing})}
+    
+    Pengujian ini bertujuan mengukur kinerja modul ekstraksi informasi.
+    \begin{enumerate}
+        \item Menggunakan \textit{Ground Truth Dataset}, yaitu sekumpulan dokumen risalah rapat yang telah dianotasi secara manual oleh manusia sebagai kunci jawaban.
+        \item Menghitung metrik evaluasi standar seperti \textit{Precision}, \textit{Recall}, dan \textit{F1-Score} untuk tugas pengenalan entitas (NER) dan klasifikasi aktivitas.
+    \end{enumerate}
+
+    \item \textbf{Pengujian Fungsional (\textit{Black Box Testing})}
+    
+    Pengujian ini berfokus pada validasi fitur dari sudut pandang pengguna akhir.
+    \begin{enumerate}
+        \item Menguji skenario penggunaan utama, seperti pencarian profil anggota, pemfilteran aktivitas berdasarkan topik RUU, dan navigasi antarmuka.
+        \item Memastikan bahwa \textit{dashboard} menampilkan data yang sesuai dengan kueri yang dimasukkan tanpa kesalahan logika.
+    \end{enumerate}
+
+    \item \textbf{Pengujian Integrasi (\textit{End-to-End Testing})}
+    
+    Pengujian ini memverifikasi aliran data dari hulu ke hilir.
+    \begin{enumerate}
+        \item Memastikan dokumen baru yang diambil oleh \textit{crawler} berhasil diproses oleh modul NLP, disimpan ke basis data, dan muncul di \textit{dashboard} secara otomatis tanpa intervensi manual.
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Indikator Keberhasilan}
+
+Keberhasilan pengembangan sistem LAT diukur berdasarkan pencapaian target kinerja kuantitatif pada aspek akurasi data, performa sistem, dan cakupan informasi. Rincian kriteria keberhasilan tersebut disajikan pada Tabel \ref{tab:indikator-keberhasilan}.
+
+\begin{table}[h]
+    \centering
+    \caption{Kriteria dan Indikator Keberhasilan Sistem}
+    \label{tab:indikator-keberhasilan}
+    \begin{adjustbox}{max width=\textwidth}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{|l|p{6cm}|p{5cm}|}
+        \hline
+        \textbf{Aspek Pengujian} & \textbf{Parameter} & \textbf{Target Capaian} \\
+        \hline
+        \multirow{2}{*}{Akurasi NLP} & Skor F1 untuk Ekstraksi Entitas Utama (Nama Anggota, Partai) & $> 75\%$ \\
+        \cline{2-3}
+        & Skor F1 untuk Klasifikasi Jenis Aktivitas & $> 70\%$ \\
+        \hline
+        Kualitas Penautan & Relevansi Skor Kesamaan Semantik (\textit{Semantic Similarity}) & Nilai korelasi positif yang signifikan pada pasangan janji-aktivitas yang valid secara manual ($> 0.7$) \\
+        \hline
+        Performa Sistem & Waktu Respons Pencarian (\textit{Query Response Time}) & $< 3$ detik untuk kueri standar \\
+        \hline
+        Cakupan Data & Tingkat Keberhasilan Akuisisi Dokumen (\textit{Crawling Success Rate}) & Mampu mengunduh minimal $80\%$ dokumen publik yang tersedia di situs target \\
+        \hline
+    \end{tabular}
+    \end{adjustbox}
+\end{table}
+
+\section{Analisis Risiko}
+
+Dalam pengembangan sistem perangkat lunak yang melibatkan integrasi data eksternal dan teknologi kecerdasan buatan, potensi risiko teknis maupun non-teknis tidak dapat dihindari. Analisis risiko ini bertujuan untuk mengidentifikasi berbagai hambatan yang mungkin muncul selama siklus pengembangan sistem LAT, serta merumuskan strategi mitigasi yang konkret untuk meminimalkan dampak negatif terhadap keberhasilan proyek.
+
+\subsection{Identifikasi Risiko}
+
+Risiko pengembangan dikategorikan berdasarkan sumber masalahnya, yaitu risiko teknis, risiko data, dan risiko sumber daya. Tabel \ref{tab:identifikasi-risiko} menjabarkan potensi masalah yang telah diidentifikasi beserta tingkat dampaknya terhadap proyek.
+
+\begin{table}[H]
+    \centering
+    \caption{Identifikasi Risiko Pengembangan Sistem}
+    \label{tab:identifikasi-risiko}
+    \begin{adjustbox}{max width=\textwidth}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{|l|p{5cm}|p{6cm}|}
+        \hline
+        \textbf{Kategori Risiko} & \textbf{Deskripsi Risiko} & \textbf{Dampak Potensial} \\
+        \hline
+        \multirow{2}{*}{Risiko Teknis} & Perubahan struktur HTML pada situs sumber data (\texttt{dpr.go.id}) secara tiba-tiba. & Kegagalan modul \textit{crawler} dalam mengunduh dokumen baru, menyebabkan data sistem tidak mutakhir. \\
+        \cline{2-3}
+        & Kualitas dokumen sumber PDF yang sangat buruk (hasil pindai miring, buram, atau tulisan tangan). & Kegagalan modul OCR dan NLP dalam mengekstrak teks, mengakibatkan data aktivitas hilang atau tidak lengkap. \\
+        \hline
+        \multirow{2}{*}{Risiko Data} & Ambiguitas nama anggota dewan (banyak nama yang mirip atau sama). & Kesalahan atribusi aktivitas ke profil anggota yang salah, menurunkan akurasi data profil. \\
+        \cline{2-3}
+        & Teks janji kampanye yang terlalu umum atau abstrak. & Kesulitan modul semantik dalam menemukan tautan yang relevan dengan aktivitas legislatif yang spesifik. \\
+        \hline
+        Risiko Sumber Daya & Keterbatasan sumber daya komputasi (GPU/RAM) untuk menjalankan model NLP yang berat. & Proses pemrosesan data menjadi sangat lambat atau kegagalan \textit{deployment} model pada server produksi. \\
+        \hline
+    \end{tabular}
+    \end{adjustbox}
+\end{table}
+
+\subsection{Strategi Mitigasi Risiko}
+
+Berdasarkan risiko yang telah diidentifikasi, disusun strategi mitigasi untuk mencegah atau menangani masalah tersebut jika terjadi. Tabel \ref{tab:mitigasi-risiko} merinci langkah-langkah penanganan untuk setiap risiko.
+
+\begin{table}[H]
+    \centering
+    \caption{Strategi Mitigasi Risiko}
+    \label{tab:mitigasi-risiko}
+    \begin{adjustbox}{max width=\textwidth}
+    \renewcommand{\arraystretch}{1.4}
+    \begin{tabular}{|p{5cm}|p{8cm}|}
+        \hline
+        \textbf{Risiko Teridentifikasi} & \textbf{Strategi Mitigasi} \\
+        \hline
+        Perubahan struktur HTML situs sumber & Merancang arsitektur \textit{crawler} yang modular sehingga penyesuaian selektor HTML dapat dilakukan dengan cepat tanpa mengubah logika utama, serta menerapkan pemantauan (\textit{monitoring}) log galat secara berkala. \\
+        \hline
+        Kualitas dokumen PDF buruk & Mengintegrasikan layanan OCR berbasis awan (\textit{cloud-based OCR}) yang lebih canggih untuk dokumen sulit, atau menerapkan mekanisme penandaan manual (\textit{human-in-the-loop}) untuk dokumen yang gagal diproses mesin. \\
+        \hline
+        Ambiguitas nama anggota & Menerapkan teknik \textit{Entity Disambiguation} dengan memanfaatkan atribut tambahan seperti Partai Asal dan Daerah Pemilihan (Dapil) sebagai konteks pembeda. \\
+        \hline
+        Janji kampanye abstrak & Menggunakan model \textit{Sentence Transformer} yang dilatih pada korpus hukum/politik Indonesia untuk menangkap makna kontekstual yang lebih luas, bukan sekadar pencocokan kata kunci. \\
+        \hline
+        Keterbatasan sumber daya komputasi & Menggunakan varian model NLP yang lebih ringan (teknik \textit{Knowledge Distillation}) atau menerapkan mekanisme pemrosesan data secara bertahap (\textit{batch processing}) pada jam sepi trafik. \\
+        \hline
+    \end{tabular}
+    \end{adjustbox}
+\end{table}

@@ -1,0 +1,178 @@
+\chapter{LAMPIRAN 3: Rincian Analisis Penentuan Solusi}
+
+\begin{table}[H]
+  \centering
+  \small
+  \begin{tabularx}{\textwidth}{|l|X|}
+    \hline
+    \textbf{Nilai} & \textbf{Interpretasi} \\
+    \hline
+    1 & Kedua elemen sama pentingnya (\textit{Equal Importance}) \\
+    \hline
+    3 & Salah satu elemen sedikit lebih penting (\textit{Moderate Importance}) \\
+    \hline
+    5 & Salah satu elemen lebih penting (\textit{Strong Importance}) \\
+    \hline
+    7 & Salah satu elemen jauh lebih penting (\textit{Very Strong Importance}) \\
+    \hline
+    9 & Salah satu elemen mutlak lebih penting (\textit{Extreme Importance}) \\
+    \hline
+    2, 4, 6, 8 & Nilai-nilai antara dua tingkat pertimbangan yang berdekatan \\
+    \hline
+  \end{tabularx}
+  \caption{Kriteria Matriks Perbandingan Berpasangan (Skala Saaty)}
+  \label{tbl:saaty-scale}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \small
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Kriteria} & \textbf{Efektivitas (K1)} & \textbf{Skalabilitas (K2)} & \textbf{Dampak (K3)} & \textbf{Kemudahan (K4)} & \textbf{Kualitas Data (K5)} \\
+    \hline
+    Efektivitas (K1) & 1 & 3 & 1 & 7 & 3 \\
+    \hline
+    Skalabilitas (K2) & 1/3 & 1 & 1/3 & 5 & 1 \\
+    \hline
+    Dampak (K3) & 1 & 3 & 1 & 7 & 3 \\
+    \hline
+    Kemudahan (K4) & 1/7 & 1/5 & 1/7 & 1 & 1/5 \\
+    \hline
+    Kualitas Data (K5) & 1/3 & 1 & 1/3 & 5 & 1 \\
+    \hline
+    \textbf{Jumlah} & \textbf{2.81} & \textbf{8.20} & \textbf{2.81} & \textbf{25.00} & \textbf{8.20} \\
+    \hline
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Matriks Perbandingan Berpasangan Antar Kriteria}
+  \label{tbl:pairwise-comparison-matrix}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \small
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{|l|c|c|c|c|c|c|}
+    \hline
+    \textbf{Kriteria} & \textbf{Efektivitas} & \textbf{Skalabilitas} & \textbf{Dampak} & \textbf{Kemudahan} & \textbf{Kualitas} & \textbf{Bobot Prioritas} \\
+    \hline
+    Efektivitas & 0.36 & 0.37 & 0.36 & 0.28 & 0.37 & 0.348 \\
+    \hline
+    Skalabilitas & 0.12 & 0.12 & 0.12 & 0.20 & 0.12 & 0.136 \\
+    \hline
+    Dampak & 0.36 & 0.37 & 0.36 & 0.28 & 0.37 & 0.348 \\
+    \hline
+    Kemudahan & 0.05 & 0.02 & 0.05 & 0.04 & 0.02 & 0.036 \\
+    \hline
+    Kualitas & 0.12 & 0.12 & 0.12 & 0.20 & 0.12 & 0.136 \\
+    \hline
+  \end{tabular}
+  \end{adjustbox}
+  \caption{Normalisasi Nilai AHP Kriteria}
+  \label{tbl:ahp-normalization}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \small
+  \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Kriteria} & \textbf{Rata-rata Baris / Bobot Prioritas} \\
+    \hline
+    Efektivitas & 0.348 \\
+    \hline
+    Dampak & 0.348 \\
+    \hline
+    Skalabilitas & 0.136 \\
+    \hline
+    Kualitas Data & 0.136 \\
+    \hline
+    Kemudahan & 0.036 \\
+    \hline
+  \end{tabular}
+  \caption{Rata-Rata Nilai Kriteria (Bobot Prioritas)}
+  \label{tbl:criteria-weights}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \small
+  \begin{tabular}{|l|c|c|c|c|}
+    \hline
+    \textbf{Alternatif} & \textbf{S01 (Manual)} & \textbf{S02 (IR)} & \textbf{S03 (IE)} & \textbf{S04 (Hybrid)} \\
+    \hline
+    S01 & 1 & 1/3 & 1/5 & 1/9 \\
+    \hline
+    S02 & 3 & 1 & 1/3 & 1/7 \\
+    \hline
+    S03 & 5 & 3 & 1 & 1/5 \\
+    \hline
+    S04 & 9 & 7 & 5 & 1 \\
+    \hline
+    \textbf{Jumlah} & \textbf{18.00} & \textbf{11.33} & \textbf{6.53} & \textbf{1.45} \\
+    \hline
+  \end{tabular}
+  \caption{Perbandingan Berpasangan Alternatif Terhadap Kriteria Efektivitas (K1)}
+  \label{tbl:pairwise-alternatives-k1}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|l|c|c|c|c|c|}
+    \hline
+    \textbf{Alternatif} & \textbf{S01} & \textbf{S02} & \textbf{S03} & \textbf{S04} & \textbf{Bobot Prioritas} \\
+    \hline
+    S01 & 0.055 & 0.029 & 0.030 & 0.076 & 0.047 \\
+    \hline
+    S02 & 0.166 & 0.088 & 0.050 & 0.096 & 0.100 \\
+    \hline
+    S03 & 0.277 & 0.264 & 0.153 & 0.137 & 0.207 \\
+    \hline
+    S04 & 0.500 & 0.617 & 0.765 & 0.689 & 0.642 \\
+    \hline
+  \end{tabular}
+  \caption{Normalisasi Matriks Alternatif Solusi (Kriteria Efektivitas)}
+  \label{tbl:normalisasi-efektivitas}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{|l|c|}
+    \hline
+    \textbf{Alternatif} & \textbf{Rata-rata (Bobot Lokal)} \\
+    \hline
+    S01 & 0.047 \\
+    \hline
+    S02 & 0.100 \\
+    \hline
+    S03 & 0.207 \\
+    \hline
+    S04 & 0.642 \\
+    \hline
+  \end{tabular}
+  \caption{Rata-rata Nilai Alternatif Solusi (Kriteria Efektivitas)}
+  \label{tbl:rata-rata-efektivitas}
+\end{table}
+
+% \begin{table}[h]
+%   \centering
+%   \begin{tabular}{|l|c|c|c|c|c|c|}
+%     \hline
+%     \textbf{Alternatif} & \textbf{Efektivitas} & \textbf{Skalabilitas} & \textbf{Dampak} & \textbf{Kemudahan} & \textbf{Kualitas} & \textbf{Bobot Global} \\
+%     & \textbf{(0.348)} & \textbf{(0.136)} & \textbf{(0.348)} & \textbf{(0.036)} & \textbf{(0.136)} & \textbf{(Skor Akhir)} \\
+%     \hline
+%     S01 (Manual) & 0.016 & 0.007 & 0.070 & 0.018 & 0.034 & 0.145 \\
+%     \hline
+%     S02 (IR) & 0.035 & 0.048 & 0.035 & 0.011 & 0.014 & 0.143 \\
+%     \hline
+%     S03 (IE) & 0.072 & 0.007 & 0.035 & 0.004 & 0.041 & 0.159 \\
+%     \hline
+%     S04 (Hibrida) & 0.223 & 0.075 & 0.209 & 0.002 & 0.048 & 0.557 \\
+%     \hline
+%   \end{tabular}
+%   \caption{Perhitungan Bobot Akhir Alternatif Solusi}
+%   \label{tbl:bobot-akhir-solusi}
+% \end{table}
+

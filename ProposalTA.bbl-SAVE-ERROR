@@ -1,0 +1,1929 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global/global}
+    \entry{abbasi2021keyword}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=c94284bd811bb5af2f7b0a799fb1b565}{%
+           family={Abbasi},
+           familyi={A\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8447a0fee045f8a58d5d88ff5dc6375}{%
+           family={Rashidi},
+           familyi={R\bibinitperiod},
+           given={Sedigheh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=22eb6f55f9dbe8aa453d637489a4e885}{%
+           family={Ahmadi},
+           familyi={A\bibinitperiod},
+           given={Abdolreza},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2c3f1241f1c632870ef5237780e425be}
+      \strng{fullhash}{2c3f1241f1c632870ef5237780e425be}
+      \strng{fullhashraw}{2c3f1241f1c632870ef5237780e425be}
+      \strng{bibnamehash}{2c3f1241f1c632870ef5237780e425be}
+      \strng{authorbibnamehash}{2c3f1241f1c632870ef5237780e425be}
+      \strng{authornamehash}{2c3f1241f1c632870ef5237780e425be}
+      \strng{authorfullhash}{2c3f1241f1c632870ef5237780e425be}
+      \strng{authorfullhashraw}{2c3f1241f1c632870ef5237780e425be}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Pattern Recognition Letters}
+      \field{title}{Keyword Weight Optimization Using Gradient Strategies in Focused Crawling}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0167865520304335
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0167865520304335
+      \endverb
+    \endentry
+    \entry{alanazi2022nlp}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1029fd9f0ea7944b0a1bf3cd595c3e6}{%
+           family={Alanazi},
+           familyi={A\bibinitperiod},
+           given={A.H.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{fullhash}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{fullhashraw}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{bibnamehash}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{authorbibnamehash}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{authornamehash}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{authorfullhash}{27389c3a8f4d005582cbd9ed585e72f8}
+      \strng{authorfullhashraw}{27389c3a8f4d005582cbd9ed585e72f8}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{International Journal of Medical Informatics}
+      \field{title}{Machine Learning and Deep Learning-based Natural Language Processing for Auto-Vetting Medical Referrals}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352914822001071
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2352914822001071
+      \endverb
+    \endentry
+    \entry{alzu2024cyberattack}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cc739a8a3b43c66080db2a0b77e09d47}{%
+           family={Alzu'bi},
+           familyi={A\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{fullhash}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{fullhashraw}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{bibnamehash}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{authorbibnamehash}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{authornamehash}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{authorfullhash}{b225e480ddb1bb531b9b86aee0194ea1}
+      \strng{authorfullhashraw}{b225e480ddb1bb531b9b86aee0194ea1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Computers \& Security}
+      \field{title}{Cyberattack Event Logs Classification Using Deep Learning with Semantic Feature Analysis}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0167404824005285
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0167404824005285
+      \endverb
+    \endentry
+    \entry{bantay2023frequent}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b3f1b46fc83b3ee3360e1e49f42937cf}{%
+           family={Bántay},
+           familyi={B\bibinitperiod},
+           given={Lilla},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{fullhash}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{fullhashraw}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{bibnamehash}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{authorbibnamehash}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{authornamehash}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{authorfullhash}{9f022393e260b5969623f5e6ee9b15da}
+      \strng{authorfullhashraw}{9f022393e260b5969623f5e6ee9b15da}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Engineering Applications of Artificial Intelligence}
+      \field{title}{Frequent Pattern Mining-Based Log File Partition for Process Mining}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0952197623004050
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0952197623004050
+      \endverb
+    \endentry
+    \entry{begany2024ogdtransformation}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=6aea9e580c97ee30017f67b48998dd29}{%
+           family={Begany},
+           familyi={B\bibinitperiod},
+           given={Gregory\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{fullhash}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{fullhashraw}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{bibnamehash}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{authorbibnamehash}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{authornamehash}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{authorfullhash}{6aea9e580c97ee30017f67b48998dd29}
+      \strng{authorfullhashraw}{6aea9e580c97ee30017f67b48998dd29}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Government Information Quarterly}
+      \field{title}{Open Government Data Initiatives as Agents of Digital Transformation in the Public Sector: Exploring the Extent of Use among Early Adopters}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X24000479
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X24000479
+      \endverb
+    \endentry
+    \entry{berkovitz2023openframework}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db562160da52177ec6ba42cce6aa2657}{%
+           family={Berkovitz},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{fullhash}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{fullhashraw}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{bibnamehash}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{authorbibnamehash}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{authornamehash}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{authorfullhash}{70d3170a9b05860d3bd0c519aa94bec2}
+      \strng{authorfullhashraw}{70d3170a9b05860d3bd0c519aa94bec2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Big Data}
+      \field{title}{An Open Framework for Analyzing Public Parliaments Data}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00831-3
+      \endverb
+      \verb{url}
+      \verb https://journalofbigdata.springeropen.com/articles/10.1186/s40537-023-00831-3
+      \endverb
+    \endentry
+    \entry{bordignon2020rules}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3de1fb4ed069aa3e8a018c2d9257a493}{%
+           family={Bordignon},
+           familyi={B\bibinitperiod},
+           given={Massimo},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{fullhash}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{fullhashraw}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{bibnamehash}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{authorbibnamehash}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{authornamehash}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{authorfullhash}{8e2d86d81dd788f49858e56f8db84f05}
+      \strng{authorfullhashraw}{8e2d86d81dd788f49858e56f8db84f05}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Public Economics}
+      \field{title}{Rules Transparency and Political Accountability}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0047272700001092
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0047272700001092
+      \endverb
+    \endentry
+    \entry{breuer2023integrated}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c68d4c0a6d62336fec041f161d019e10}{%
+           family={Breuer},
+           familyi={B\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{fullhash}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{fullhashraw}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{bibnamehash}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{authorbibnamehash}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{authornamehash}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{authorfullhash}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \strng{authorfullhashraw}{d8a62e911448daf1b0df7ee4f0a76fbc}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{World Development}
+      \field{title}{Integrated Policymaking: Institutional Designs for Digital Governance in Indonesia}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0305750X23001353
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0305750X23001353
+      \endverb
+    \endentry
+    \entry{chen2023determinants}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=802879972afa5bd206c5988365d10ca8}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{fullhash}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{fullhashraw}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{bibnamehash}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{authorbibnamehash}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{authornamehash}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{authorfullhash}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \strng{authorfullhashraw}{ef3e49d38b2205bec844f5b5ead56ae8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Government Information Quarterly}
+      \field{title}{Determinants of Open Government Data Usage: Integrating Trust Theory and Social Cognitive Theory}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X23000576
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X23000576
+      \endverb
+    \endentry
+    \entry{dhanith2024weakly}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a2798d1613e8f5a03166dc9be819afe0}{%
+           family={Dhanith},
+           familyi={D\bibinitperiod},
+           given={P.R.J.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d9d175820783a0b5d878aa9c77745512}
+      \strng{fullhash}{d9d175820783a0b5d878aa9c77745512}
+      \strng{fullhashraw}{d9d175820783a0b5d878aa9c77745512}
+      \strng{bibnamehash}{d9d175820783a0b5d878aa9c77745512}
+      \strng{authorbibnamehash}{d9d175820783a0b5d878aa9c77745512}
+      \strng{authornamehash}{d9d175820783a0b5d878aa9c77745512}
+      \strng{authorfullhash}{d9d175820783a0b5d878aa9c77745512}
+      \strng{authorfullhashraw}{d9d175820783a0b5d878aa9c77745512}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Engineering Applications of Artificial Intelligence}
+      \field{title}{Weakly Supervised Learning for an Effective Focused Web Crawler}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0952197624001027
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0952197624001027
+      \endverb
+    \endentry
+    \entry{ekakristi2025intermediate}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=db9bf9489f51e25f23e43a4c954004e1}{%
+           family={Ekakristi},
+           familyi={E\bibinitperiod},
+           given={A.S.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d8d366e70661c0f005175e326db304aa}
+      \strng{fullhash}{d8d366e70661c0f005175e326db304aa}
+      \strng{fullhashraw}{d8d366e70661c0f005175e326db304aa}
+      \strng{bibnamehash}{d8d366e70661c0f005175e326db304aa}
+      \strng{authorbibnamehash}{d8d366e70661c0f005175e326db304aa}
+      \strng{authornamehash}{d8d366e70661c0f005175e326db304aa}
+      \strng{authorfullhash}{d8d366e70661c0f005175e326db304aa}
+      \strng{authorfullhashraw}{d8d366e70661c0f005175e326db304aa}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Natural Language Processing Journal}
+      \field{title}{Intermediate-Task Transfer Learning for Indonesian NLP Tasks}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2949719125000378
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2949719125000378
+      \endverb
+    \endentry
+    \entry{erjavec2023bcorpora}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f767046411167df21272b6ab5b26565c}{%
+           family={Erjavec},
+           familyi={E\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b648e3078b238512acdd6444f32c0f40}
+      \strng{fullhash}{b648e3078b238512acdd6444f32c0f40}
+      \strng{fullhashraw}{b648e3078b238512acdd6444f32c0f40}
+      \strng{bibnamehash}{b648e3078b238512acdd6444f32c0f40}
+      \strng{authorbibnamehash}{b648e3078b238512acdd6444f32c0f40}
+      \strng{authornamehash}{b648e3078b238512acdd6444f32c0f40}
+      \strng{authorfullhash}{b648e3078b238512acdd6444f32c0f40}
+      \strng{authorfullhashraw}{b648e3078b238512acdd6444f32c0f40}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Language Resources and Evaluation}
+      \field{title}{The B Corpora of Parliamentary Proceedings}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s10579-021-09574-0
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s10579-021-09574-0
+      \endverb
+    \endentry
+    \entry{ferry2024democracy}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=39b4b69c049b2b6eb86672c11fa83b7e}{%
+           family={Ferry},
+           familyi={F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{405955baa609123db2a45f9a02430b55}
+      \strng{fullhash}{405955baa609123db2a45f9a02430b55}
+      \strng{fullhashraw}{405955baa609123db2a45f9a02430b55}
+      \strng{bibnamehash}{405955baa609123db2a45f9a02430b55}
+      \strng{authorbibnamehash}{405955baa609123db2a45f9a02430b55}
+      \strng{authornamehash}{405955baa609123db2a45f9a02430b55}
+      \strng{authorfullhash}{405955baa609123db2a45f9a02430b55}
+      \strng{authorfullhashraw}{405955baa609123db2a45f9a02430b55}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Critical Perspectives on Accounting}
+      \field{title}{Democracy, Accountability, Accounting and Trust: A Critical Reflection}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1045235424000376
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1045235424000376
+      \endverb
+    \endentry
+    \entry{govtrack_about}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0d0b420cc58dce7bf8e61fa87e9842a7}{%
+           family={{GovTrack.us}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{fullhash}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{fullhashraw}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{bibnamehash}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{authorbibnamehash}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{authornamehash}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{authorfullhash}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \strng{authorfullhashraw}{0d0b420cc58dce7bf8e61fa87e9842a7}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Diakses terakhir}
+      \field{title}{About}
+      \verb{urlraw}
+      \verb https://substack.govtrack.us/about
+      \endverb
+      \verb{url}
+      \verb https://substack.govtrack.us/about
+      \endverb
+    \endentry
+    \entry{goyal2024named}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=2e0c33aa11435262f0306874fd20b11c}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a3b9eb9110babcead9c93637f046690a}
+      \strng{fullhash}{a3b9eb9110babcead9c93637f046690a}
+      \strng{fullhashraw}{a3b9eb9110babcead9c93637f046690a}
+      \strng{bibnamehash}{a3b9eb9110babcead9c93637f046690a}
+      \strng{authorbibnamehash}{a3b9eb9110babcead9c93637f046690a}
+      \strng{authornamehash}{a3b9eb9110babcead9c93637f046690a}
+      \strng{authorfullhash}{a3b9eb9110babcead9c93637f046690a}
+      \strng{authorfullhashraw}{a3b9eb9110babcead9c93637f046690a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{Named Entity Recognition and Relationship Extraction for Biomedical Texts: A Survey}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0925231224019428
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0925231224019428
+      \endverb
+    \endentry
+    \entry{guo2020deep}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3a4015314b36f50d72a43c8fb03ca87e}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Jiafeng},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8121822453c22a22329471d90870573a}
+      \strng{fullhash}{8121822453c22a22329471d90870573a}
+      \strng{fullhashraw}{8121822453c22a22329471d90870573a}
+      \strng{bibnamehash}{8121822453c22a22329471d90870573a}
+      \strng{authorbibnamehash}{8121822453c22a22329471d90870573a}
+      \strng{authornamehash}{8121822453c22a22329471d90870573a}
+      \strng{authorfullhash}{8121822453c22a22329471d90870573a}
+      \strng{authorfullhashraw}{8121822453c22a22329471d90870573a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Information Processing \& Management}
+      \field{title}{A Deep Look into Neural Ranking Models for Information Retrieval}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0306457319302390
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0306457319302390
+      \endverb
+    \endentry
+    \entry{halimatusadiyah2025understanding}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0f4c05b75a914caf917e352192cfebf8}{%
+           family={Halimatusa'diyah},
+           familyi={H\bibinitperiod},
+           given={Iim},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=de3c7f0d420f90527d311e8122c24405}{%
+           family={Jannah},
+           familyi={J\bibinitperiod},
+           given={A.\bibnamedelimi N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d0665980ffa8443281a32a25d71800b2}
+      \strng{fullhash}{d0665980ffa8443281a32a25d71800b2}
+      \strng{fullhashraw}{d0665980ffa8443281a32a25d71800b2}
+      \strng{bibnamehash}{d0665980ffa8443281a32a25d71800b2}
+      \strng{authorbibnamehash}{d0665980ffa8443281a32a25d71800b2}
+      \strng{authornamehash}{d0665980ffa8443281a32a25d71800b2}
+      \strng{authorfullhash}{d0665980ffa8443281a32a25d71800b2}
+      \strng{authorfullhashraw}{d0665980ffa8443281a32a25d71800b2}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Women's Studies International Forum}
+      \field{title}{Understanding Hidden Layers in Political Participation: Women's Representation in Indonesia's Election Management Bodies}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0277539525000901
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0277539525000901
+      \endverb
+    \endentry
+    \entry{himler2024anomaly}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=16f4bf05662d3f6e6b2d4b5ae4955c07}{%
+           family={Himler},
+           familyi={H\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{fullhash}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{fullhashraw}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{bibnamehash}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{authorbibnamehash}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{authornamehash}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{authorfullhash}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \strng{authorfullhashraw}{1eb4ab7c9ca3411514ec2c944972b2bc}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Machine Learning with Applications}
+      \field{title}{Anomaly Detection in Log-Event Sequences: A Federated Deep Learning Approach}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666827024000306
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666827024000306
+      \endverb
+    \endentry
+    \entry{hong2024transparency}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3008a72cb1d093bb142ec619573ddb12}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Seok-Joon},
+           giveni={S\bibinithyphendelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{fullhash}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{fullhashraw}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{bibnamehash}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{authorbibnamehash}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{authornamehash}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{authorfullhash}{3008a72cb1d093bb142ec619573ddb12}
+      \strng{authorfullhashraw}{3008a72cb1d093bb142ec619573ddb12}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Policy Studies Journal}
+      \field{title}{Political Determinants of Government Transparency: Scope, Time, and Quality of Open Government Data}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/full/10.1111/polp.12607
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/full/10.1111/polp.12607
+      \endverb
+    \endentry
+    \entry{huang2022semantic}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=536462bb3a16ce6ceddb82623ee3e5f0}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{241d08f010848e92176157fe6e5927c1}
+      \strng{fullhash}{241d08f010848e92176157fe6e5927c1}
+      \strng{fullhashraw}{241d08f010848e92176157fe6e5927c1}
+      \strng{bibnamehash}{241d08f010848e92176157fe6e5927c1}
+      \strng{authorbibnamehash}{241d08f010848e92176157fe6e5927c1}
+      \strng{authornamehash}{241d08f010848e92176157fe6e5927c1}
+      \strng{authorfullhash}{241d08f010848e92176157fe6e5927c1}
+      \strng{authorfullhashraw}{241d08f010848e92176157fe6e5927c1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{A Semantic Matching Approach Addressing Multidimensional Service Representation}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417422015597
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417422015597
+      \endverb
+    \endentry
+    \entry{ibrohim2023hate}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=268b3ca42fc7ad052bc75dcec14fa431}{%
+           family={Ibrohim},
+           familyi={I\bibinitperiod},
+           given={M.O.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{fullhash}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{fullhashraw}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{bibnamehash}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{authorbibnamehash}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{authornamehash}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{authorfullhash}{9261ac3e386325512ec17b4f2a9c1246}
+      \strng{authorfullhashraw}{9261ac3e386325512ec17b4f2a9c1246}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Information Processing in Agriculture}
+      \field{title}{Hate Speech and Abusive Language Detection in Indonesian Social Media}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2405844023058553
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2405844023058553
+      \endverb
+    \endentry
+    \entry{ignasius2023image}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c085579e29bb4e61782dd427585dec7b}{%
+           family={Ignasius},
+           familyi={I\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{92a84b309072f610aa79a9eece85950c}
+      \strng{fullhash}{92a84b309072f610aa79a9eece85950c}
+      \strng{fullhashraw}{92a84b309072f610aa79a9eece85950c}
+      \strng{bibnamehash}{92a84b309072f610aa79a9eece85950c}
+      \strng{authorbibnamehash}{92a84b309072f610aa79a9eece85950c}
+      \strng{authornamehash}{92a84b309072f610aa79a9eece85950c}
+      \strng{authorfullhash}{92a84b309072f610aa79a9eece85950c}
+      \strng{authorfullhashraw}{92a84b309072f610aa79a9eece85950c}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{title}{Image Pre-Processing Effect on OCR's Performance for Scene Images}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050923017660
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050923017660
+      \endverb
+    \endentry
+    \entry{islam2024survey}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b8fbdcebc28145a973312fe0f1466582}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{fullhash}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{fullhashraw}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{bibnamehash}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{authorbibnamehash}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{authornamehash}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{authorfullhash}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \strng{authorfullhashraw}{6cac15b5a8ae5dff64ea9ba62cf10a7f}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{A Comprehensive Survey on Applications of Transformers for Deep Learning Tasks}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417423031688
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417423031688
+      \endverb
+    \endentry
+    \entry{jariungu_tentangkami}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5a16c5f96cc26ca0b43045ec1980e0a5}{%
+           family={{JariUngu}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{fullhash}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{fullhashraw}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{bibnamehash}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{authorbibnamehash}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{authornamehash}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{authorfullhash}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \strng{authorfullhashraw}{5a16c5f96cc26ca0b43045ec1980e0a5}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tentang Kami}
+      \verb{urlraw}
+      \verb https://jariungu.com/tentang_kami.php
+      \endverb
+      \verb{url}
+      \verb https://jariungu.com/tentang_kami.php
+      \endverb
+    \endentry
+    \entry{jehangir2023survey}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=751357207bade89e029887bb02346a53}{%
+           family={Jehangir},
+           familyi={J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{12472bea014175a1a36c49af3e1847b3}
+      \strng{fullhash}{12472bea014175a1a36c49af3e1847b3}
+      \strng{fullhashraw}{12472bea014175a1a36c49af3e1847b3}
+      \strng{bibnamehash}{12472bea014175a1a36c49af3e1847b3}
+      \strng{authorbibnamehash}{12472bea014175a1a36c49af3e1847b3}
+      \strng{authornamehash}{12472bea014175a1a36c49af3e1847b3}
+      \strng{authorfullhash}{12472bea014175a1a36c49af3e1847b3}
+      \strng{authorfullhashraw}{12472bea014175a1a36c49af3e1847b3}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Natural Language Processing Journal}
+      \field{title}{A Survey on Named Entity Recognition: Datasets, Tools, and Methodologies}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2949719123000146
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2949719123000146
+      \endverb
+    \endentry
+    \entry{kempeneer2023ogdlegal}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=82287fc5329443f755d47c3e0618c54c}{%
+           family={Kempeneer},
+           familyi={K\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=284a4d2793b2628ae2b5cdd14445e88c}{%
+           family={Pirannejad},
+           familyi={P\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1776fb7c71e8675ec83706f490e6ab6b}{%
+           family={Wolswinkel},
+           familyi={W\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{fullhash}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{fullhashraw}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{bibnamehash}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{authorbibnamehash}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{authornamehash}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{authorfullhash}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \strng{authorfullhashraw}{0c14a37d938aa86ae6afe2ba0eef7f39}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Government Information Quarterly}
+      \field{title}{Open Government Data from a Legal Perspective: An AI-Driven Systematic Literature Review}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0740624X23000230
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0740624X23000230
+      \endverb
+    \endentry
+    \entry{koto2020indolem}{inproceedings}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=a7cd32cdfe9c7f2f0b9bbd3488916ed0}{%
+           family={Koto},
+           familyi={K\bibinitperiod},
+           given={Fajri},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=306d193d7f058f7b1ba6057dd87300af}{%
+           family={Rahimi},
+           familyi={R\bibinitperiod},
+           given={Afshin},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=01616f375f1c7073a12392b1bcb27b9a}{%
+           family={Lau},
+           familyi={L\bibinitperiod},
+           given={Jey\bibnamedelima Han},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=73eda808e90683df3ed357e4549e09f3}{%
+           family={Baldwin},
+           familyi={B\bibinitperiod},
+           given={Timothy},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{091b8d61fb14d9a28c0abc4c72067628}
+      \strng{fullhash}{843b59af230d425dcd72dbefed3cdbd8}
+      \strng{fullhashraw}{843b59af230d425dcd72dbefed3cdbd8}
+      \strng{bibnamehash}{843b59af230d425dcd72dbefed3cdbd8}
+      \strng{authorbibnamehash}{843b59af230d425dcd72dbefed3cdbd8}
+      \strng{authornamehash}{091b8d61fb14d9a28c0abc4c72067628}
+      \strng{authorfullhash}{843b59af230d425dcd72dbefed3cdbd8}
+      \strng{authorfullhashraw}{843b59af230d425dcd72dbefed3cdbd8}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of COLING 2020}
+      \field{title}{IndoLEM and IndoBERT: A Benchmark Dataset and Pre-trained Language Model for Indonesian NLP}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2020.coling-main.66/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2020.coling-main.66/
+      \endverb
+    \endentry
+    \entry{kreps2023can}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4e54a1d778fa1f2ea2901648dfd6ad89}{%
+           family={Kreps},
+           familyi={K\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{fullhash}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{fullhashraw}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{bibnamehash}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{authorbibnamehash}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{authornamehash}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{authorfullhash}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \strng{authorfullhashraw}{8d1d7b4d6a7c8215c3f500d05e7efc81}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Government Information Quarterly}
+      \field{title}{Can AI Communication Tools Increase Legislative Responsiveness?}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X23000291
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X23000291
+      \endverb
+    \endentry
+    \entry{landauer2023deep}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c18662026c0fc68e7dac6025d881d9a2}{%
+           family={Landauer},
+           familyi={L\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{aa8e95a216cb82692510312c1f93f954}
+      \strng{fullhash}{aa8e95a216cb82692510312c1f93f954}
+      \strng{fullhashraw}{aa8e95a216cb82692510312c1f93f954}
+      \strng{bibnamehash}{aa8e95a216cb82692510312c1f93f954}
+      \strng{authorbibnamehash}{aa8e95a216cb82692510312c1f93f954}
+      \strng{authornamehash}{aa8e95a216cb82692510312c1f93f954}
+      \strng{authorfullhash}{aa8e95a216cb82692510312c1f93f954}
+      \strng{authorfullhashraw}{aa8e95a216cb82692510312c1f93f954}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Machine Learning with Applications}
+      \field{title}{Deep Learning for Anomaly Detection in Log Data: A Survey}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666827023000233
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666827023000233
+      \endverb
+    \endentry
+    \entry{li2025extracting}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=c2af0f05e99850ddfe02b8fc2d66808b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jianhua},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{fullhash}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{fullhashraw}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{bibnamehash}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{authorbibnamehash}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{authornamehash}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{authorfullhash}{c0dab88e86bf3b583d59ff083147b819}
+      \strng{authorfullhashraw}{c0dab88e86bf3b583d59ff083147b819}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{Extracting Semantic Link Network of Words from Text for Semantics-Based Applications}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417424026356
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417424026356
+      \endverb
+    \endentry
+    \entry{li2023generative}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=66d548e0e670e107fc4a80dc0c3825b3}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{fullhash}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{fullhashraw}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{bibnamehash}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{authorbibnamehash}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{authornamehash}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{authorfullhash}{2f060ecac11058276f5d0b5a813eee70}
+      \strng{authorfullhashraw}{2f060ecac11058276f5d0b5a813eee70}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Information Processing \& Management}
+      \field{title}{Generative Retrieval for Conversational Question Answering}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0306457323002121
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0306457323002121
+      \endverb
+    \endentry
+    \entry{liang2025determinants}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=eae847448355a6af337a795b5a8dab36}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eae847448355a6af337a795b5a8dab36}
+      \strng{fullhash}{eae847448355a6af337a795b5a8dab36}
+      \strng{fullhashraw}{eae847448355a6af337a795b5a8dab36}
+      \strng{bibnamehash}{eae847448355a6af337a795b5a8dab36}
+      \strng{authorbibnamehash}{eae847448355a6af337a795b5a8dab36}
+      \strng{authornamehash}{eae847448355a6af337a795b5a8dab36}
+      \strng{authorfullhash}{eae847448355a6af337a795b5a8dab36}
+      \strng{authorfullhashraw}{eae847448355a6af337a795b5a8dab36}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Government Information Quarterly}
+      \field{title}{Determinants of Open Government Data Continuance Usage and Value Creation: A Self-Regulation Framework Analysis}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X25000164
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0740624X25000164
+      \endverb
+    \endentry
+    \entry{loc_congressgov}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9565002c760d5f54e633221fa5e570e3}{%
+           family={{Library of Congress}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{fullhash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{fullhashraw}{9565002c760d5f54e633221fa5e570e3}
+      \strng{bibnamehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authorbibnamehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authornamehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authorfullhash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authorfullhashraw}{9565002c760d5f54e633221fa5e570e3}
+      \field{extraname}{1}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{1}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Portal resmi legislasi federal Amerika}
+      \field{title}{Congress.gov}
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/full/10.1145/3584741
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/full/10.1145/3584741
+      \endverb
+    \endentry
+    \entry{loc_nodate_congressdata}{online}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=9565002c760d5f54e633221fa5e570e3}{%
+           family={{Library of Congress}},
+           familyi={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{fullhash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{fullhashraw}{9565002c760d5f54e633221fa5e570e3}
+      \strng{bibnamehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authorbibnamehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authornamehash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authorfullhash}{9565002c760d5f54e633221fa5e570e3}
+      \strng{authorfullhashraw}{9565002c760d5f54e633221fa5e570e3}
+      \field{extraname}{2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradate}{2}
+      \field{labeldatesource}{nodate}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Panduan akses data dan bulk data}
+      \field{title}{Using Congress.gov Data Offsite}
+      \verb{urlraw}
+      \verb https://www.congress.gov/help/using-data-offsite
+      \endverb
+      \verb{url}
+      \verb https://www.congress.gov/help/using-data-offsite
+      \endverb
+    \endentry
+    \entry{lin2025interpretable}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=11ccc60d0ab0725822a1eae13191a8ca}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{2587358d66860dc162e126841784410a}
+      \strng{fullhash}{2587358d66860dc162e126841784410a}
+      \strng{fullhashraw}{2587358d66860dc162e126841784410a}
+      \strng{bibnamehash}{2587358d66860dc162e126841784410a}
+      \strng{authorbibnamehash}{2587358d66860dc162e126841784410a}
+      \strng{authornamehash}{2587358d66860dc162e126841784410a}
+      \strng{authorfullhash}{2587358d66860dc162e126841784410a}
+      \strng{authorfullhashraw}{2587358d66860dc162e126841784410a}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{Interpretable Named Entity Recognition via Integrating Deep Learning with Logical Rules}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417425029525
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417425029525
+      \endverb
+    \endentry
+    \entry{lin2022survey}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=7373bd817aea5a7be2c5aa79984d2623}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{fullhash}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{fullhashraw}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{bibnamehash}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{authorbibnamehash}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{authornamehash}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{authorfullhash}{7de42597e4e641dae2e492fe41e72ff2}
+      \strng{authorfullhashraw}{7de42597e4e641dae2e492fe41e72ff2}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{AI Open}
+      \field{title}{A Survey of Transformers}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666651022000146
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2666651022000146
+      \endverb
+    \endentry
+    \entry{liu2023surveynewsnarrative}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6c75aa6c36387de874c31c37d57afeb5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jingyi},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4adddece80ffbb8473c9268318a702c9}{%
+           family={Mitra},
+           familyi={M\bibinitperiod},
+           given={Tanushree},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=47da2f88c8e514c35d6d6d73183fa909}{%
+           family={North},
+           familyi={N\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{fullhash}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{fullhashraw}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{bibnamehash}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{authorbibnamehash}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{authornamehash}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{authorfullhash}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \strng{authorfullhashraw}{0d4abc4fbdb2d956e08c8e6cd33bcee8}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{title}{A Survey on Event-Based News Narrative Extraction}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://dl.acm.org/doi/10.1145/3584741
+      \endverb
+      \verb{url}
+      \verb https://dl.acm.org/doi/10.1145/3584741
+      \endverb
+    \endentry
+    \entry{liu2025improved}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=92faacc6874983183ce7fb86e39f31ec}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{fullhash}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{fullhashraw}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{bibnamehash}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{authorbibnamehash}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{authornamehash}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{authorfullhash}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \strng{authorfullhashraw}{d61467cc0dfb2ba0963b008d4e3245b0}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Computer Speech \& Language}
+      \field{title}{Improved Relation Extraction Through Key Phrase Identification via Dependency Trees}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0885230824000895
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0885230824000895
+      \endverb
+    \endentry
+    \entry{lu2025measuring}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=08e0e36fa0c5c1155be48190e84829a7}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Chao},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{fullhash}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{fullhashraw}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{bibnamehash}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{authorbibnamehash}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{authornamehash}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{authorfullhash}{e3c7b8e7badf88363574d74b646e4986}
+      \strng{authorfullhashraw}{e3c7b8e7badf88363574d74b646e4986}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Informetrics}
+      \field{title}{Measuring Research Difficulty in Academic Papers: A Case Study in {NLP}}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2694610625000396
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2694610625000396
+      \endverb
+    \endentry
+    \entry{ma2023sequence}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b57469e515001f2ff1832a82c3867958}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Qianli},
+           giveni={Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4f517377de38e2e31a9c77434362faa6}
+      \strng{fullhash}{4f517377de38e2e31a9c77434362faa6}
+      \strng{fullhashraw}{4f517377de38e2e31a9c77434362faa6}
+      \strng{bibnamehash}{4f517377de38e2e31a9c77434362faa6}
+      \strng{authorbibnamehash}{4f517377de38e2e31a9c77434362faa6}
+      \strng{authornamehash}{4f517377de38e2e31a9c77434362faa6}
+      \strng{authorfullhash}{4f517377de38e2e31a9c77434362faa6}
+      \strng{authorfullhashraw}{4f517377de38e2e31a9c77434362faa6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Information Sciences}
+      \field{title}{Sequence Labeling with {MLTA}: Multi-Level Topic-Aware Mechanism}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0020025523005030
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0020025523005030
+      \endverb
+    \endentry
+    \entry{nabiilah2023bert}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20ba078ce2a07678b7acc2e015160232}{%
+           family={Nabiilah},
+           familyi={N\bibinitperiod},
+           given={G.Z.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{fullhash}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{fullhashraw}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{bibnamehash}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{authorbibnamehash}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{authornamehash}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{authorfullhash}{6922937b47314bf833275cf44f1cb6fe}
+      \strng{authorfullhashraw}{6922937b47314bf833275cf44f1cb6fe}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{title}{BERT Base Model for Toxic Comment Analysis on Indonesian Social Media Dataset}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050922022669
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1877050922022669
+      \endverb
+    \endentry
+    \entry{nai2025leveraging}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1cca269ac1715d56101a2ac15983e9ea}{%
+           family={Nai},
+           familyi={N\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{fullhash}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{fullhashraw}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{bibnamehash}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{authorbibnamehash}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{authornamehash}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{authorfullhash}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \strng{authorfullhashraw}{c01ce09035fbe26f83a16a3ea3aa39ed}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Information Systems}
+      \field{title}{Leveraging Process Mining and Event Log Enrichment in Legal Text Analysis}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2212473X25000173
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2212473X25000173
+      \endverb
+    \endentry
+    \entry{nguyen2025developing}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=986e51140e37f4181d5f6292d82dd5f9}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={H.A.T.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e2e27fa04bc5816976391e1566389efa}
+      \strng{fullhash}{e2e27fa04bc5816976391e1566389efa}
+      \strng{fullhashraw}{e2e27fa04bc5816976391e1566389efa}
+      \strng{bibnamehash}{e2e27fa04bc5816976391e1566389efa}
+      \strng{authorbibnamehash}{e2e27fa04bc5816976391e1566389efa}
+      \strng{authornamehash}{e2e27fa04bc5816976391e1566389efa}
+      \strng{authorfullhash}{e2e27fa04bc5816976391e1566389efa}
+      \strng{authorfullhashraw}{e2e27fa04bc5816976391e1566389efa}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{Developing an Automated Framework for Eco-Label Information Categorization Using Web Crawling and Natural Language Processing Techniques}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417425013107
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417425013107
+      \endverb
+    \endentry
+    \entry{rani2021weighted}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=751f19dac2eab2ce52e2a13b7c712160}{%
+           family={Rani},
+           familyi={R\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{fullhash}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{fullhashraw}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{bibnamehash}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{authorbibnamehash}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{authornamehash}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{authorfullhash}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \strng{authorfullhashraw}{d5d17e6fcc20d6c0d3f1ba9d2db0bbf3}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Expert Systems with Applications}
+      \field{title}{A Weighted Word Embedding Based Approach for Extractive Text Summarization}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417421012264
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0957417421012264
+      \endverb
+    \endentry
+    \entry{rienks2023corruption}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b64d3b32a1a1dae653aa7a31b60e8f0d}{%
+           family={Rienks},
+           familyi={R\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{fullhash}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{fullhashraw}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{bibnamehash}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{authorbibnamehash}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{authornamehash}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{authorfullhash}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \strng{authorfullhashraw}{b64d3b32a1a1dae653aa7a31b60e8f0d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{European Journal of Political Economy}
+      \field{title}{Corruption, Scandals and Incompetence: Do Voters Care?}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S017626802300085X
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S017626802300085X
+      \endverb
+    \endentry
+    \entry{ruas2022nilinker}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5ef7f7a34a93ee6c9bd58d0329208768}{%
+           family={Ruas},
+           familyi={R\bibinitperiod},
+           given={Pedro},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{fullhash}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{fullhashraw}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{bibnamehash}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{authorbibnamehash}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{authornamehash}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{authorfullhash}{032f7022042f4bb581e52d58fbf9912f}
+      \strng{authorfullhashraw}{032f7022042f4bb581e52d58fbf9912f}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Biomedical Informatics}
+      \field{title}{NILINKER: Attention-Based Approach to NIL Entity Linking}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1532046422001526
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1532046422001526
+      \endverb
+    \endentry
+    \entry{sekjen2020sileg}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ae01ac394a2c961bcfb8f27148401fac}{%
+           family={{Sekretaris Jenderal DPR RI}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{fullhash}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{fullhashraw}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{bibnamehash}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{authorbibnamehash}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{authornamehash}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{authorfullhash}{ae01ac394a2c961bcfb8f27148401fac}
+      \strng{authorfullhashraw}{ae01ac394a2c961bcfb8f27148401fac}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Deskripsi SILEG pada draf}
+      \field{title}{Peraturan Sekretaris Jenderal DPR RI No. 13 Tahun 2020: Pedoman Pelaksanaan SILEG}
+      \field{year}{2020}
+    \endentry
+    \entry{sheppard2023transparency}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7dae1ab71241ea54cda925cec9837e3e}{%
+           family={Sheppard},
+           familyi={S\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{fullhash}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{fullhashraw}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{bibnamehash}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{authorbibnamehash}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{authornamehash}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{authorfullhash}{7dae1ab71241ea54cda925cec9837e3e}
+      \strng{authorfullhashraw}{7dae1ab71241ea54cda925cec9837e3e}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Journal of Accounting and Public Policy}
+      \field{title}{Transparency Trade-offs in the Operation of National Public Private Partnership Units}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0278425423000601
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0278425423000601
+      \endverb
+    \endentry
+    \entry{silva2024improving}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=0f7f00eeec01cb0b3ac8f7dc89e51e29}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8f1d203235193fa4851bbadac2789832}
+      \strng{fullhash}{8f1d203235193fa4851bbadac2789832}
+      \strng{fullhashraw}{8f1d203235193fa4851bbadac2789832}
+      \strng{bibnamehash}{8f1d203235193fa4851bbadac2789832}
+      \strng{authorbibnamehash}{8f1d203235193fa4851bbadac2789832}
+      \strng{authornamehash}{8f1d203235193fa4851bbadac2789832}
+      \strng{authorfullhash}{8f1d203235193fa4851bbadac2789832}
+      \strng{authorfullhashraw}{8f1d203235193fa4851bbadac2789832}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Computer Speech \& Language}
+      \field{title}{Improving Dense Retrieval Models with {LLM} Augmented Data for Dataset Search}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0950705124003757
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0950705124003757
+      \endverb
+    \endentry
+    \entry{wang2023paths}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=4731e10e61b37617d5f7c88ae3f664bf}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Fang},
+           giveni={F\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{fullhash}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{fullhashraw}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{bibnamehash}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{authorbibnamehash}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{authornamehash}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{authorfullhash}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \strng{authorfullhashraw}{5d5d8f0bf7b06f7b3df4d0eb3539e75b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Government Information Quarterly}
+      \field{title}{Paths to Open Government Data Reuse: A Three-Dimensional Framework of Information Need, Data and Government Preparation}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0378720623001271
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0378720623001271
+      \endverb
+    \endentry
+    \entry{wang2022improving}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=1,uniquepart=given,hash=bd7d15d79ca36b953d99a1a0aaccb94a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod},
+           givenun=1}}%
+      }
+      \strng{namehash}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{fullhash}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{fullhashraw}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{bibnamehash}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{authorbibnamehash}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{authornamehash}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{authorfullhash}{0d4d723537ce643363f661a0a7e6cce0}
+      \strng{authorfullhashraw}{0d4d723537ce643363f661a0a7e6cce0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Information Processing \& Management}
+      \field{title}{Improving Zero-Shot Retrieval Using Dense External Expansion}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0306457322001364
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0306457322001364
+      \endverb
+    \endentry
+    \entry{wilie2020indonlu}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=405217885b5639d53e9cd31a1bb37f21}{%
+           family={Wilie},
+           familyi={W\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{fullhash}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{fullhashraw}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{bibnamehash}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{authorbibnamehash}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{authornamehash}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{authorfullhash}{f2bec616ef8389b1be6a4300ebf716ff}
+      \strng{authorfullhashraw}{f2bec616ef8389b1be6a4300ebf716ff}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of COLING 2020}
+      \field{title}{IndoNLU Benchmark and Resources for Evaluating Indonesian Natural Language Understanding}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://aclanthology.org/2020.coling-main.557/
+      \endverb
+      \verb{url}
+      \verb https://aclanthology.org/2020.coling-main.557/
+      \endverb
+    \endentry
+    \entry{wirtz2022opengovdata}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=b2956362e78ceb67d9a47d32c50ffdf8}{%
+           family={Wirtz},
+           familyi={W\bibinitperiod},
+           given={Bernd\bibnamedelima W.},
+           giveni={B\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a970d2804d2974cc19b506e4f8f3e988}{%
+           family={Weyerer},
+           familyi={W\bibinitperiod},
+           given={Jan\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7fdf76ef3748e9568998b003ac8a09ca}{%
+           family={Rosch},
+           familyi={R\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ca858b54526baebea5f4cd038e879771}
+      \strng{fullhash}{ca858b54526baebea5f4cd038e879771}
+      \strng{fullhashraw}{ca858b54526baebea5f4cd038e879771}
+      \strng{bibnamehash}{ca858b54526baebea5f4cd038e879771}
+      \strng{authorbibnamehash}{ca858b54526baebea5f4cd038e879771}
+      \strng{authornamehash}{ca858b54526baebea5f4cd038e879771}
+      \strng{authorfullhash}{ca858b54526baebea5f4cd038e879771}
+      \strng{authorfullhashraw}{ca858b54526baebea5f4cd038e879771}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Electronic Markets}
+      \field{title}{Open Government Data: A Systematic Literature Review of Empirical Research}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12525-022-00582-8
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12525-022-00582-8
+      \endverb
+    \endentry
+    \entry{xu2025laap}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5d099836f6a91712f1b8f9de548a019f}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7eec342215c24eeda8f519f877520710}
+      \strng{fullhash}{7eec342215c24eeda8f519f877520710}
+      \strng{fullhashraw}{7eec342215c24eeda8f519f877520710}
+      \strng{bibnamehash}{7eec342215c24eeda8f519f877520710}
+      \strng{authorbibnamehash}{7eec342215c24eeda8f519f877520710}
+      \strng{authornamehash}{7eec342215c24eeda8f519f877520710}
+      \strng{authorfullhash}{7eec342215c24eeda8f519f877520710}
+      \strng{authorfullhashraw}{7eec342215c24eeda8f519f877520710}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{author}
+      \field{journaltitle}{Neurocomputing}
+      \field{title}{{LAAP}: Learning the Argument of An Entity with Event Prompts for Document-Level Event Extraction}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0925231224013559
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/abs/pii/S0925231224013559
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
